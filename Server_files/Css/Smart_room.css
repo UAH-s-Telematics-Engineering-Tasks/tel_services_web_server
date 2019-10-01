@@ -1,0 +1,47 @@
+p {
+  text-align: center;
+  font-family: courier;
+}
+
+a:hover {
+  color: #3285a8;
+  background-color: yellow;
+  transition: all 0.5s ease;
+}
+
+a:visited {
+  color: purple;
+}
+
+#room_info {
+  width: 50%;
+  float: left;
+}
+
+#sensor_info {
+  width: 50%;
+  float: left;
+}
+
+footer {
+  width: 100%;
+  float: left;
+}
+
+#menu {
+  width: 50%;
+  float: left;
+}
+
+#info_link {
+  width: 50%;
+  float: left;
+}
+
+table, td {
+  border: 5px dashed black;
+}
+
+table {
+  border-collapse: collapse; /*Collapse borders of adjacent cells!*/
+}
