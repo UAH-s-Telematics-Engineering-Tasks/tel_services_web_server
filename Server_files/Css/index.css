@@ -1,0 +1,87 @@
+#global_cont {
+  width: 100%;
+}
+
+#title_header {
+  margin-bottom: 0px;
+  text-align:center;
+  background-color: #40ff00;
+  width: 100%;
+  color:#ff0000
+}
+
+#menu_cont {
+  text-align:center;
+  background-color:red;
+  width:50%;
+  height:20px;
+  float: left
+}
+
+#info_cont {
+  text-align:left;
+  background-color:yellow;
+  width:50%;
+  height:20px;
+  float: left;
+  margin-left: 10px;
+  color:blue
+}
+
+#data_cont {
+  background-color: blue;
+  width:50%;
+  float:left;
+  height:350px
+}
+
+#data_header {
+  text-align:center;
+  color:black
+}
+
+#data_list {
+  color:white;
+  margin-left:20px
+}
+
+#g_maps_link {
+  color: white;
+}
+
+#sensors_cont {
+  background-color:black;
+  width:50%;
+  float:left;
+  height:350px
+}
+
+#sensors_header {
+  text-align:center;
+  color:white
+}
+
+a {
+  color: yellow;
+}
+
+table {
+  margin-left: 20px;
+  margin-top: 120px;
+  color: white;
+  border: 1px solid white;
+}
+
+th, td {
+  text-align: left;
+  border: 1px dashed white;
+}
+
+footer {
+  background-color:orange;
+  height:20px;
+  width:100%;
+  text-align:center;
+  color:blue;
+  float:left
+}
