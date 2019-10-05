@@ -3,15 +3,11 @@
 }
 
 #title_header {
-  margin-bottom: 0px;
-  text-align:center;
   background-color: #40ff00;
-  width: 100%;
   color:#ff0000
 }
 
 #menu_cont {
-  text-align:center;
   background-color:red;
   width:50%;
   height:20px;
@@ -19,12 +15,10 @@
 }
 
 #info_cont {
-  text-align:left;
   background-color:yellow;
   width:50%;
   height:20px;
   float: left;
-  margin-left: 10px;
   color:blue
 }
 
@@ -32,11 +26,10 @@
   background-color: blue;
   width:50%;
   float:left;
-  height:350px
+  height:350px;
 }
 
 #data_header {
-  text-align:center;
   color:black
 }
 
@@ -53,28 +46,47 @@
   background-color:black;
   width:50%;
   float:left;
-  height:350px
+  height:350px;
 }
 
 #sensors_header {
-  text-align:center;
   color:white
 }
 
+.hdr {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+.menu_link {
+  padding: 30px;
+}
+
+.centered_text {
+  text-align: center;
+}
+
 a {
-  color: yellow;
+  color: black;
 }
 
 table {
-  margin-left: 20px;
-  margin-top: 120px;
+  margin-left: 35%;
   color: white;
   border: 1px solid white;
+  border-collapse: collapse;
+}
+
+img {
+  margin: auto;
+  display: block;
 }
 
 th, td {
   text-align: left;
   border: 1px dashed white;
+  border-collapse: collapse;
 }
 
 footer {

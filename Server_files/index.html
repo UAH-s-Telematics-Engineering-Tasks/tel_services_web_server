@@ -1,30 +1,44 @@
 <!DOCTYPE html>
-  <html>
+  <html manifest="Manifests/caching.cachemanifest">
     <head>
       <meta charset="utf-8">
       <title>Smart Room Project</title>
       <link rel="stylesheet" href="Css/index.css">
+      <!--<script type="text/javascript" src="JS/Name_local_storage.js"></script>-->
+      <script type="text/javascript">
+        //localStorage.removeItem("name");
+      </script>
     </head>
     <body>
       <div id="global_cont">
 
         <div id="title_cont">
-          <h1 id="title_header">Smart Room Project</h1>
+          <h1 class="centered_text hdr" id="title_header">Smart Room Project</h1>
         </div>
 
-        <div id="menu_cont">
-          <!-- <b style="color:yellow"><strong>Nombre</strong></b> -->
-          <a href="Html/Mi_nombre.html" target="_blank">Nombre</a>
-          <a href="Html/Config.html" target="_blank">Configuración</a>
+        <div class="centered_text" id="menu_cont">
+          <a class="menu_link" href="Html/Mi_nombre.html" target="_blank">Nombre</a>
+          <a class="menu_link" href="Html/Config.html" target="_blank">Configuración</a>
           <br>
         </div>
 
-        <div id="info_cont">
-          <b>Información: Hola "valor de fname": Bienvenido a smartroom</b>
+        <div class="centered_text" id="info_cont">
+          <!--<b>Información: Hola "valor de fname": Bienvenido a smartroom</b>-->
         </div>
 
+        <script type="text/javascript">
+        if (typeof(Storage) !== "undefined") {
+            if ("name" in localStorage) {
+              document.getElementById("info_cont").innerHTML = "Hello " + localStorage.name;
+            }
+            else {
+              document.getElementById("info_cont").innerHTML = "<a href=Html/Mi_nombre.html>Preséntate :)</a>";
+            }
+          }
+        </script>
+
         <div id="data_cont">
-          <h1>Datos de la habitación</h1>
+          <h1 class="centered_text">Datos de la habitación</h1>
           <ul id="data_list">
             <li>País: España</li>
             <li>Ciudad: Guadalajara</li>
@@ -37,8 +51,8 @@
           <br>
         </div>
 
-        <div id="sensors_cont">
-            <h1 id="sensors_header">Datos de los sensores</h1>
+        <div class="centered_text" id="sensors_cont">
+            <h1 class="centered_text" id="sensors_header">Datos de los sensores</h1>
             <table>
               <tbody>
                 <tr>

@@ -1,0 +1,102 @@
+.text_input, textarea, select {
+  width: 70%;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#web_title {
+  background-color:#a901db;
+  color:#40ff00
+}
+
+#conf_cont {
+  width:100%;
+  column-count:2;
+  background-color:yellow;
+  padding: 25px;
+}
+
+#go_back_cont {
+  width: 100%;
+  height:20px;
+  background-color:red;
+  float:left
+}
+
+#config_footer {
+  background-color:#40ff00; height:20px;
+  width:100%;
+  text-align:center;
+  color:blue;
+  float:left
+}
+
+.tags {
+  float: left;
+  width: 30%;
+  margin-bottom: 10px;
+}
+
+.data_input {
+  float: left;
+  width: 70%;
+  margin-bottom: 10px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #000000;
+  box-shadow: 0 0 20px #000000;
+  border-radius: 5px;
+}
+
+.rounded {
+  border-radius: 5px;
+}
+
+.centered {
+  margin: auto;
+  display: block;
+  cursor: crosshair;
+}
+
+input[type=radio] {
+  cursor: pointer;
+}
+
+input[type=radio]:focus {
+  border-radius: 0px;
+  border-color: none;
+  box-shadow: 0 0 0px;
+  outline: inherit;
+}
+
+.main_page_link {
+  color: black;
+}
+
+.not_so_big {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.tmp_form {
+  display: block;
+  margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .tags, .data_input, input[type=radio] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+
+output {
+  float: right;
+  padding-right: 250px;
+  margin: 0px;
+}

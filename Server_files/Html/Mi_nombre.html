@@ -1,8 +1,15 @@
 <!DOCTYPE html>
-   <html>
+   <html manifest="../Manifests/caching.cachemanifest">
      <head>
        <meta charset="utf-8">
        <title>Nombre</title>
+       <script type="text/javascript">
+         function set_name() {
+           localStorage.name = document.getElementById("username").value;
+           alert("Username caught: " + localStorage.name);
+           location.href = "../index.html";
+         }
+       </script>
      </head>
      <body>
 
@@ -11,8 +18,10 @@
          <div id="configuracion" style="width:100%; background-color:#00ffff">
            <form action="index.html" target="_blank">
                <br>
-               Introcuzca su nombre: <input type="text" name="fname">
-               <input type="submit" name="submit" value="Enviar" style="border-radius:5px">
+               Introcuzca su nombre: <input type="text" name="fname" id="username">
+               <a href="../index.html">
+               <input type="submit" name="submit" value="Enviar" style="border-radius:5px" onclick="set_name()" required>
+             </a>
                <br>
                <br>
            </form>
