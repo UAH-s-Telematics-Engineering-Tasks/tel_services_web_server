@@ -2,6 +2,7 @@
   <html manifest="Manifests/caching.cachemanifest">
     <head>
       <meta charset="utf-8">
+      <link rel="shortcut icon" href="Icons/Lightbulb.ico">
       <title>Smart Room Project</title>
       <link rel="stylesheet" href="Css/index.css">
       <!--<script type="text/javascript" src="JS/Name_local_storage.js"></script>-->
@@ -23,13 +24,13 @@
         </div>
 
         <div class="centered_text" id="info_cont">
-          <!--<b>Información: Hola "valor de fname": Bienvenido a smartroom</b>-->
+
         </div>
 
         <script type="text/javascript">
-        if (typeof(Storage) !== "undefined") {
-            if ("name" in localStorage) {
-              document.getElementById("info_cont").innerHTML = "Hello " + localStorage.name;
+            if (typeof(Storage) !== "undefined") {
+              if ("name" in localStorage) {
+                document.getElementById("info_cont").innerHTML = "Hello " + localStorage.name;
             }
             else {
               document.getElementById("info_cont").innerHTML = "<a href=Html/Mi_nombre.html>Preséntate :)</a>";
@@ -45,7 +46,10 @@
             <li>Localización: 40.630472, -3.164750</li>
             <li><a href="https://goo.gl/maps/9M6KSrSFXfmkKCL29" target="_blank">Google maps</a></li>
           </ul>
-          <img src="Img/Room.jpg" width="200" height="150">
+          <div style="height: 500px; width: 100%">
+            <img style="float: left" src="Img/Room.jpg" width="200" height="150">
+            <iframe style="float: left" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14403.62169370295!2d-3.184722862808343!3d40.63013641532265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd43ac63987ff53b%3A0x800a702e2c07492e!2sGuadalajara!5e0!3m2!1sen!2ses!4v1569310845797!5m2!1sen!2ses" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
           <br>
           <br>
           <br>
