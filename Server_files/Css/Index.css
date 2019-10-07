@@ -1,4 +1,4 @@
-#global_cont {
+.full_width {
   width: 100%;
 }
 
@@ -19,18 +19,19 @@
   width:50%;
   height:20px;
   float: left;
-  color:blue
+  color:blue;
+  text-align: center;
 }
 
 #data_cont {
   background-color: blue;
   width:50%;
   float:left;
-  height:350px;
+  height:400px;
 }
 
 #data_header {
-  color:black
+  color: black
 }
 
 #data_list {
@@ -46,7 +47,7 @@
   background-color:black;
   width:50%;
   float:left;
-  height:350px;
+  height:400px;
 }
 
 #sensors_header {
@@ -72,15 +73,29 @@ a {
 }
 
 table {
-  margin-left: 35%;
+  margin-top: 9%;
+  margin-left: 40%;
   color: white;
   border: 1px solid white;
   border-collapse: collapse;
 }
 
 img {
-  margin: auto;
   display: block;
+  float: left;
+  width: 300px;
+  height: 200px;
+  margin-left: 10px;
+}
+
+iframe {
+  display: block;
+  float: right;
+  width: 300px;
+  height: 200px;
+  frameborder: 0px;
+  border: 0px;
+  margin-right: 10px;
 }
 
 th, td {

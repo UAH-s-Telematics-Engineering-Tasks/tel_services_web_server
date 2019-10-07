@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-   <html manifest="../Manifests/caching.cachemanifest">
+   <html manifest="../Manifests/Caching_rules.cachemanifest">
      <head>
        <meta charset="utf-8">
        <link rel="shortcut icon" href="../Icons/Lightbulb.ico">
        <link rel="stylesheet" href="../Css/Config.css">
-       <link rel="stylesheet" href="../Css/index.css">
+       <link rel="stylesheet" href="../Css/Index.css">
        <title>Configuración</title>
      </head>
      <body>
 
-       <div id="global_cont">
+       <div class="global_cont">
 
          <div id="config_title_cont">
            <h1 class="centered_text hdr" id="web_title">Smart Room Project</h1>
@@ -90,15 +90,15 @@
              </div>
 
              <h1 class="centered_text">Seleccione los sensores</h1>
+             <div class="form_entry centered_text">
                <input type="radio" name="opcion" value="temperatura"> Temperatura
                <input type="radio" name="opcion" value="humedad"> Humedad
                <input type="radio" name="opcion" value="sonido"> Nivel de sonido
                <input type="radio" name="opcion" value="luz"> Nivel de luz
                <input type="radio" name="opcion" value="movimiento"> Movimiento
-             <h1 class="centered_text">Configure las alertas</h1>
-           </form>
+             </div>
 
-           <form oninput="res.value=parseInt(tempmax.value)-parseInt(tempmin.value)">
+             <h1 class="centered_text">Configure las alertas</h1>
 
              <div class="form_entry">
                <div class="tags">
@@ -125,11 +125,11 @@
            </form>
          </div>
 
-         <div id="go_back_cont" class="centered_text">
-           <a class="main_page_link" href="../index.html" target="_blank">Volver a la página principal</a>
+         <div class="go_back_cont centered_text">
+           <a class="main_page_link" href="../Index.html">Volver a la página principal</a>
          </div>
 
-         <footer id="config_footer">
+         <footer class="config_footer">
            Universidad de Alcalá
          </footer>
 
