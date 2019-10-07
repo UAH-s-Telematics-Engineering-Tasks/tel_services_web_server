@@ -27,4 +27,7 @@
   \section{Estructura del Sitio Web}
     Hemos optado por montar un repositorio de GitHub para agilizar el trabajo en equipo y el despliegue en el servidor. Por ello, la raíz del sitio web se puede encontrar en \textit{Server\_files} y las configuraciones se pueden encontrar en \textit{Server\_config}. La única configuración necesaria es mover el archivo \textit{apache2.conf} a \textit{/etc/apache2}. El script \textit{Server\_config\_script.sh} automatiza la creación de un entorno funcional en Apache.
 
+  \section{Sobre el uso de otros navegadores}
+    Cabe destacar que navegadores más restrictivos con la privacidad suponen dificultades para el desarrollo de nuestra proyecto. Durante las pruebas hemos utilizado el navegador Brave que no permite redireccionar mediante JavaScript utilizando el atributo href del objeto location (location.href) ni utilizar el servicio ofrecido por LocalStorage. Nuestro navegador para pruebas ha sido por tanto Chromium, que no ha presentado ningún problema para los aspectos anteriores. Firefox debería comportarse de manera parecida, si no igual, a Chromium, por lo que no esperamos que suponga ningún problema. Lamentamos las molestias que esto pudiera causar...
+
 \end{document}
