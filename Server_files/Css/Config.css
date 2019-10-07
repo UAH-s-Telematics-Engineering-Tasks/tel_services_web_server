@@ -1,42 +1,30 @@
-.text_input, textarea, select {
-  width: 70%;
-  border: 1px solid black;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
-#web_title {
+.web_title {
   background-color:#a901db;
-  color:#40ff00
-}
-
-#conf_cont {
-  width:100%;
-  column-count:2;
-  background-color: #ccffe6;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
-.go_back_cont {
-  width: 100%;
-  height:20px;
-  background-color:red;
-  float:left
-}
-
-.config_footer {
-  background-color:#40ff00; height:20px;
+  color:#40ff00;
+  margin-top:0px;
+  margin-bottom:0px;
   width:100%;
   text-align:center;
-  color:blue;
-  float:left
+}
+
+.conf_cont {
+  width:100%;
+  column-count:2;
+  background-color:#ccffe6;
+  padding-top:25px;
+  padding-bottom:25px;
+}
+
+.not_so_big {
+  margin-bottom:10px;
+  margin-top: 10px;
+  text-align:center;
 }
 
 .tags {
-  float: left;
-  width: 30%;
-  margin-bottom: 10px;
+  float:left;
+  width:30%;
+  margin-bottom:10px;
 }
 
 .data_input {
@@ -45,21 +33,45 @@
   margin-bottom: 10px;
 }
 
+.text_input, textarea, select {
+  width: 70%;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.rounded {
+  border-radius:5px;
+  margin: auto;
+  display: block;
+  cursor: crosshair;
+}
+
+.centered_text {
+  text-align: center;
+}
+
+#options {
+  margin-left:325px;
+}
+
+.go_back_cont {
+  width: 100%;
+  height:20px;
+  background-color:red;
+  float:left;
+  text-align:center;
+}
+
+.main_page_link {
+  color: black;
+}
+
 input:focus {
   outline: none;
   border-color: #000000;
   box-shadow: 0 0 20px #000000;
   border-radius: 5px;
-}
-
-.rounded {
-  border-radius: 5px;
-}
-
-.centered {
-  margin: auto;
-  display: block;
-  cursor: crosshair;
 }
 
 input[type=radio] {
@@ -73,20 +85,6 @@ input[type=radio]:focus {
   outline: inherit;
 }
 
-.main_page_link {
-  color: black;
-}
-
-.not_so_big {
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-.tmp_form {
-  display: block;
-  margin: auto;
-}
-
 @media screen and (max-width: 600px) {
   .tags, .data_input, input[type=radio] {
     width: 100%;
@@ -96,4 +94,14 @@ input[type=radio]:focus {
 
 label {
   margin-left: 10px;
+}
+
+.footer_config
+{
+  background-color:#40ff00;
+  width:100%;
+  height:20px;
+  text-align:center;
+  color:blue;
+  float:left
 }

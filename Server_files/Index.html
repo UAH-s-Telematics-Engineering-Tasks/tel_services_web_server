@@ -6,24 +6,24 @@
       <title>Smart Room Project</title>
       <link rel="stylesheet" href="Css/Index.css">
     <body>
-      <div class="full_width">
+      <div class="global_cont">
 
         <div id="title_cont">
-          <h1 class="centered_text hdr" id="title_header">Smart Room Project</h1>
+          <h1 class="title_header">Smart Room Project</h1>
         </div>
 
-        <div class="centered_text" id="menu_cont">
+        <div class="menu">
           <a class="menu_link" href="Html/Name_entry.html">Nombre</a>
           <a class="menu_link" href="Html/Config.html" target="_blank">Configuración</a>
           <br>
         </div>
 
-        <div class="centered_text" id="info_cont"></div>
+        <div id="info_cont"></div>
 
         <script type="text/javascript" src="Js/Name_local_storage.js"></script>
 
-        <div id="data_cont">
-          <h1 class="centered_text">Datos de la habitación</h1>
+        <div class="data_cont">
+          <h1 id="data_title">Datos de la habitación</h1>
           <ul id="data_list">
             <li>País: España</li>
             <li>Ciudad: Guadalajara</li>
@@ -31,16 +31,13 @@
             <li><a href="https://goo.gl/maps/9M6KSrSFXfmkKCL29" target="_blank">Google maps</a></li>
           </ul>
           <div id="multi_cont">
-            <img src="Img/Room.jpg" width="200" height="150">
+            <img src="Img/Room.jpg">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14403.62169370295!2d-3.184722862808343!3d40.63013641532265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd43ac63987ff53b%3A0x800a702e2c07492e!2sGuadalajara!5e0!3m2!1sen!2ses!4v1569310845797!5m2!1sen!2ses" frameborder="0" allowfullscreen=""></iframe>
           </div>
-          <br>
-          <br>
-          <br>
         </div>
 
-        <div class="centered_text" id="sensors_cont">
-            <h1 class="centered_text" id="sensors_header">Datos de los sensores</h1>
+        <div class="sensors_cont">
+            <h1 class="sensors_header">Datos de los sensores</h1>
             <table>
               <tbody>
                 <tr>
@@ -71,7 +68,7 @@
             </table>
         </div>
 
-        <footer>
+        <footer class="footer_index">
           Universidad de Alcalá
         </footer>
 

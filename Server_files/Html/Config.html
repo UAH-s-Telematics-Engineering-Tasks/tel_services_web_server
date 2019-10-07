@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-   <html manifest="../Manifests/Caching_rules.cachemanifest">
+   <html manifest="../Manifests/Caching_rules.appcache">
      <head>
        <meta charset="utf-8">
        <link rel="shortcut icon" href="../Icons/Lightbulb.ico">
@@ -12,14 +12,14 @@
        <div class="global_cont">
 
          <div id="config_title_cont">
-           <h1 class="centered_text hdr" id="web_title">Smart Room Project</h1>
+           <h1 class="web_title">Smart Room Project</h1>
          </div>
 
-         <div id="conf_cont">
+         <div class="conf_cont">
            <form action="datos.js" target="_blank">
-             <h1 class="centered_text not_so_big">Datos de la habitación</h1>
+             <h1 class="not_so_big">Datos de la habitación</h1>
 
-             <div class="form_entry">
+             <div>
                <div class="tags">
                  <label for="countries">País:</label>
                </div>
@@ -40,7 +40,7 @@
                </div>
              </div>
 
-             <div class="form_entry">
+             <div>
                <div class="tags">
                  <label for="city">Ciudad:</label>
                </div>
@@ -49,7 +49,7 @@
                </div>
              </div>
 
-             <div class="form_entry">
+             <div>
                <div class="tags">
                  <label for="">Coordenadas GPS:</label>
                </div>
@@ -58,7 +58,7 @@
                </div>
              </div>
 
-             <div class="form_entry">
+             <div>
                <div class="tags">
                  <label for="map">Mapa URL:</label>
                </div>
@@ -67,7 +67,7 @@
                </div>
              </div>
 
-             <div class="form_entry">
+             <div>
                <div class="tags">
                  <label for="pic">Foto:</label>
                </div>
@@ -76,31 +76,31 @@
                </div>
              </div>
 
-             <div class="form_entry">
+             <div>
                <div class="tags">
                  <label for="pass">Password:</label>
                </div>
                <div class="data_input">
-                 <input class="text_input" type="password" name="password" pattern="12345" id="pass" required>
+                 <input class="text_input" type="password" name="password" pattern="12345" id="pass" required><br><br>
                </div>
              </div>
 
-             <div class="form_entry">
-               <input type="submit" name="submit" value="Enviar datos" class="rounded centered">
+             <div>
+               <input type="submit" name="submit" value="Enviar datos" class="rounded">
              </div>
 
              <h1 class="centered_text">Seleccione los sensores</h1>
-             <div class="form_entry centered_text">
-               <input type="radio" name="opcion" value="temperatura"> Temperatura
-               <input type="radio" name="opcion" value="humedad"> Humedad
-               <input type="radio" name="opcion" value="sonido"> Nivel de sonido
-               <input type="radio" name="opcion" value="luz"> Nivel de luz
-               <input type="radio" name="opcion" value="movimiento"> Movimiento
+             <div id="options">
+               <input type="radio" name="opcion" value="temperatura"> Temperatura <br>
+               <input type="radio" name="opcion" value="humedad"> Humedad <br>
+               <input type="radio" name="opcion" value="sonido"> Nivel de sonido <br>
+               <input type="radio" name="opcion" value="luz"> Nivel de luz <br>
+               <input type="radio" name="opcion" value="movimiento"> Movimiento <br>
              </div>
 
              <h1 class="centered_text">Configure las alertas</h1>
 
-             <div class="form_entry">
+             <div>
                <div class="tags">
                  <label for="tempmax">Temperatua máxima:</label>
                </div>
@@ -109,7 +109,7 @@
                </div>
              </div>
 
-             <div class="form_entry">
+             <div>
                <div class="tags">
                  <label for="tempmin">Temperatura mínima:</label>
                </div>
@@ -117,22 +117,17 @@
                  <input class="text_input" type="number" id="tempmin" name="tempmin" max="45" min="-20">
                </div>
              </div>
-
-             <div class="form_entry">
-               <output class="centered" name="res" for="tempmax tempmin"></output>
-             </div>
-
            </form>
          </div>
 
-         <div class="go_back_cont centered_text">
+         <div class="go_back_cont">
            <a class="main_page_link" href="../Index.html">Volver a la página principal</a>
          </div>
 
-         <footer class="config_footer">
+         <footer class="footer_config">
            Universidad de Alcalá
          </footer>
 
        </div>
      </body>
-   </html
+   </html>
