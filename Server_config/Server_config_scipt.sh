@@ -4,6 +4,9 @@
 
 sudo mkdir /var/www/smart_room_root # Create a folder containing the webpage
 
+sudo git clone https://github.com/pcolladosoto/tel_services_web_server
+sudo git checkout pablo
+
 sudo  cp smart_room.conf /etc/apache2/sites-available/smart_room.conf # Copy the premade conf file to the appropriate location
 
 sudo a2ensite smart_room.conf # Enable the virtual site configured in the above conf file
