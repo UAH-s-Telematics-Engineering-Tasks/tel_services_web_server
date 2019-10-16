@@ -16,7 +16,8 @@ function parse_cardinal_coordinates(coord) {
 
   for (i in values)
     google_query = google_query.replace(/X/, values[i]);
-  return google_query;
+  //return google_query;
+  alert(google_query);
 }
 
 function parse_decimal_coordinates(coord) {
@@ -26,13 +27,27 @@ function parse_decimal_coordinates(coord) {
     if (values[i] > 0)
       values[i] = "+" + values[i];
 
-  return "https://maps.google.com/maps?q=" + values[0] + "," + values[1];
+  //return "https://maps.google.com/maps?q=" + values[0] + "," + values[1];
+  alert("https://maps.google.com/maps?q=" + values[0] + "," + values[1]);
 }
 
 function validate_input(input_box) {
-  if (!input_box.value.search(/^[nNsS]\s*\d+(\.\d+)?º\s*\d+(\.\d+)?'\s*\d+(\.\d+)?",\s*[eEoO]\s*\d+(\.\d+)?º\s*\d+(\.\d+)?'\s*\d+(\.\d+)?"$/))
+  if (!input_box.value.search(/^[nNsS]\s*\d+(\.\d+)?º\s*\d+(\.\d+)?'\s*\d+(\.\d+)?",\s*[eEoO]\s*\d+(\.\d+)?º\s*\d+(\.\d+)?'\s*\d+(\.\d+)?"$/)) {
     parse_cardinal_coordinates(input_box.value);
-
-  if (!input_box.value.search(/^-?\d+(\.\d+)?º,\s*-?\d+(\.\d+)?º$/))
+    var new_att = document.createAttribute("style");
+    new_att.value = "background-color: #86ceb4";
+    input_box.setAttributeNode(new_att);
+  }
+  else if (!input_box.value.search(/^-?\d+(\.\d+)?º,\s*-?\d+(\.\d+)?º$/)) {
     parse_decimal_coordinates(input_box.value);
+    var new_att = document.createAttribute("style");
+    new_att.value = "background-color: #86ceb4";
+    input_box.setAttributeNode(new_att);
+  }
+  else {
+    var new_att = document.createAttribute("style");
+    new_att.value = "background-color: white";
+    input_box.setAttributeNode(new_att);
+  }
+
 }
