@@ -32,13 +32,13 @@ function parse_decimal_coordinates(coord) {
 }
 
 function validate_input(input_box) {
-  if (!input_box.value.search(/^[nNsS]\s*\d+(\.\d+)?º\s*\d+(\.\d+)?'\s*\d+(\.\d+)?",\s*[eEoO]\s*\d+(\.\d+)?º\s*\d+(\.\d+)?'\s*\d+(\.\d+)?"$/)) {
+  if (!input_box.value.search(/^[nNsS]\s*((\d|[0-8]\d)º\s*(\d|[0-5]\d)'\s*(\d|[0-5]\d)(\.\d{1,6})?"|90º\s*0'\s*0"),\s*[eEoO]\s*((\d|\d\d|[12]\d\d|3[0-5]\d)º\s*(\d|[0-5]\d)'\s*(\d|[0-5]\d)(\.\d{1,6})?"|360º\s*0'\s*0")$/)) {
     parse_cardinal_coordinates(input_box.value);
     var new_att = document.createAttribute("style");
     new_att.value = "background-color: #86ceb4";
     input_box.setAttributeNode(new_att);
   }
-  else if (!input_box.value.search(/^-?\d+(\.\d+)?º,\s*-?\d+(\.\d+)?º$/)) {
+  else if (!input_box.value.search(/^-?((\d|[0-8]\d)(\.\d{1,6})?|90)º,\s*-?((\d|\d\d|[12]\d\d|3[0-5]\d)(\.\d{1,6})?|360)º$/)) {
     parse_decimal_coordinates(input_box.value);
     var new_att = document.createAttribute("style");
     new_att.value = "background-color: #86ceb4";
