@@ -7,8 +7,8 @@
        <link rel="stylesheet" href="../Css/Config.css">
        <link rel="stylesheet" href="../Css/Name_entry.css">
        <title>Nombre</title>
-       <script type="text/javascript" src="../Js/Set_name.js"></script>
        <script type="text/javascript" src="../Js/Mail_validation.js"></script>
+       <script type="text/javascript" src="../Js/Set_name.js"></script>
      </head>
      <body>
 
@@ -19,19 +19,19 @@
                <label for="username">Nombre</label>
              </div>
              <div class="in">
-               <input type="text" placeholder="Tu nombre...">
+               <input type="text" placeholder="Tu nombre..." name="username" id="username">
              </div>
            </div>
            <div class="row">
              <div class="lab">
-               <label for="username">E-mail</label>
+               <label for="mail">E-mail</label>
              </div>
              <div class="in">
-               <input type="text" placeholder="Tu e-mail..." id="mail" oninput="validate_mail(this)">
+               <input type="text" placeholder="Tu e-mail..." name="mail" id="mail" oninput="validate_mail(this)">
              </div>
            </div>
            <div class="row">
-             <button type="button" onclick="set_name(this)" required>Enviar!</button>
+             <button type="button" onclick="set_name()" required>Enviar!</button>
            </div>
          </form>
        </div>
