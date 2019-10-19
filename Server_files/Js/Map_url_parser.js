@@ -1,23 +1,23 @@
 
-var URL_STATUS = {
-  valid: false,
-  type: "Undefined"
-};
+var PATTERNS = new Object();
+
+PATTERNS.decimal = new RegExp(/^-?((\d|[0-8]\d)(\.\d{1,6})?|90)º,\s*-?((\d|\d\d|[12]\d\d|3[0-5]\d)(\.\d{1,6})?|360)º$/, '');
+PATTERNS.cardinal = new RegExp(/^[nNsS]\s*((\d|[0-8]\d)º\s*(\d|[0-5]\d)'\s*(\d|[0-5]\d)(\.\d{1,6})?"|90º\s*0'\s*0"),\s*[eEoO]\s*((\d|\d\d|[12]\d\d|3[0-5]\d)º\s*(\d|[0-5]\d)'\s*(\d|[0-5]\d)(\.\d{1,6})?"|360º\s*0'\s*0")$/, '');
 
 function parse_cardinal_coordinates(coord) {
   var google_query = "https://maps.google.com/maps?q=+Xº+X’+X”,+Xº+X’+X”";
   var values = coord.match(/\d+(\.\d+)?/g);
   var cardinality = coord.match(/[nNsSeEoO]/g);
 
-  if (cardinality[0] == "S" || cardinality[0] == "s")
+  if (cardinality[0].toUpperCase() == "S")
     values[0] = "-" + values[0];
-  if (cardinality[1] == "O" || cardinality[1] == "o")
+  if (cardinality[1].toUpperCase() == "O")
     values[1] = "-" + values[1];
 
   for (i in values)
     google_query = google_query.replace(/X/, values[i]);
-  //return google_query;
-  alert(google_query);
+
+  document.getElementById("map").value = google_query;
 }
 
 function parse_decimal_coordinates(coord) {
@@ -27,27 +27,22 @@ function parse_decimal_coordinates(coord) {
     if (values[i] > 0)
       values[i] = "+" + values[i];
 
-  //return "https://maps.google.com/maps?q=" + values[0] + "," + values[1];
-  alert("https://maps.google.com/maps?q=" + values[0] + "," + values[1]);
+  document.getElementById("map").value = "https://maps.google.com/maps?q=" + values[0] + "," + values[1];
 }
 
 function validate_input(input_box) {
-  if (!input_box.value.search(/^[nNsS]\s*((\d|[0-8]\d)º\s*(\d|[0-5]\d)'\s*(\d|[0-5]\d)(\.\d{1,6})?"|90º\s*0'\s*0"),\s*[eEoO]\s*((\d|\d\d|[12]\d\d|3[0-5]\d)º\s*(\d|[0-5]\d)'\s*(\d|[0-5]\d)(\.\d{1,6})?"|360º\s*0'\s*0")$/)) {
-    parse_cardinal_coordinates(input_box.value);
-    var new_att = document.createAttribute("style");
-    new_att.value = "background-color: #86ceb4";
-    input_box.setAttributeNode(new_att);
+  if (!input_box.value.search(PATTERNS.cardinal)) {
+    //parse_cardinal_coordinates(input_box.value);
+    FORM_STATUS.coordinates = true;
+    FORMATS.coordinates = "Cardinal";
+    input_box.setAttribute("class", input_box.getAttribute("class") + " valid");
   }
-  else if (!input_box.value.search(/^-?((\d|[0-8]\d)(\.\d{1,6})?|90)º,\s*-?((\d|\d\d|[12]\d\d|3[0-5]\d)(\.\d{1,6})?|360)º$/)) {
-    parse_decimal_coordinates(input_box.value);
-    var new_att = document.createAttribute("style");
-    new_att.value = "background-color: #86ceb4";
-    input_box.setAttributeNode(new_att);
+  else if (!input_box.value.search(PATTERNS.decimal)) {
+    //parse_decimal_coordinates(input_box.value);
+    FORM_STATUS.coordinates = true;
+    FORMATS.coordinates = "Decimal";
+    input_box.setAttribute("class", input_box.getAttribute("class") + " valid");
   }
-  else {
-    var new_att = document.createAttribute("style");
-    new_att.value = "background-color: white";
-    input_box.setAttributeNode(new_att);
-  }
-
+  else
+    input_box.setAttribute("class", "text_input");
 }

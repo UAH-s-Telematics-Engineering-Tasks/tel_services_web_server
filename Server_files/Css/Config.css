@@ -105,3 +105,9 @@ label {
   color:blue;
   float:left
 }
+
+/* Input Status Classes */
+
+.valid {
+  background-color: #00ff00
+}

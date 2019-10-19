@@ -5,6 +5,9 @@
        <link rel="shortcut icon" href="../Icons/Lightbulb.ico">
        <link rel="stylesheet" href="../Css/Config.css">
        <link rel="stylesheet" href="../Css/Index.css">
+       <script type="text/javascript" src="../Js/Globals.js"></script>
+       <script type="text/javascript" src="../Js/Map_url_parser.js"></script>
+       <script type="text/javascript" src="../Js/Get_values.js"></script>
        <title>Configuración</title>
      </head>
      <body>
@@ -54,7 +57,7 @@
                  <label for="">Coordenadas GPS:</label>
                </div>
                <div class="data_input">
-                 <input class="text_input" type="text" name="coordinates" id="coordinates">
+                 <input class="text_input" type="text" name="coordinates" id="coordinates" oninput="validate_input(this)">
                </div>
              </div>
 
@@ -86,7 +89,8 @@
              </div>
 
              <div>
-               <input type="submit" name="submit" value="Enviar datos" class="rounded">
+               <!--<input type="submit" name="submit" value="Enviar datos" class="rounded" onclick="get_values()">-->
+               <button type="button" name="submit" class="rounded" onclick="get_values()">Enviar datos</button>
              </div>
 
              <h1 class="centered_text">Seleccione los sensores</h1>
