@@ -43,6 +43,8 @@ function validate_input(input_box) {
     FORMATS.coordinates = "Decimal";
     input_box.setAttribute("class", input_box.getAttribute("class") + " valid");
   }
-  else
+  else {
     input_box.setAttribute("class", "text_input");
+    FORM_STATUS.coordinates = false;
+  }
 }

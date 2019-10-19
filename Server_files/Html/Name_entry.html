@@ -8,25 +8,39 @@
        <link rel="stylesheet" href="../Css/Name_entry.css">
        <title>Nombre</title>
        <script type="text/javascript" src="../Js/Set_name.js"></script>
+       <script type="text/javascript" src="../Js/Mail_validation.js"></script>
      </head>
      <body>
 
        <div class="global_cont">
-
-         <div id="name_input">
-           <form action="index.html" target="_blank">
-               Introduzca su nombre: <input type="text" name="fname" id="username">
-               <input class="send" type="submit" name="submit" value="Enviar" onclick="set_name()" required>
-           </form>
-         </div>
-
+         <form action="index.html" target="_blank">
+           <div class="row">
+             <div class="lab">
+               <label for="username">Nombre</label>
+             </div>
+             <div class="in">
+               <input type="text" placeholder="Tu nombre...">
+             </div>
+           </div>
+           <div class="row">
+             <div class="lab">
+               <label for="username">E-mail</label>
+             </div>
+             <div class="in">
+               <input type="text" placeholder="Tu e-mail..." id="mail" oninput="validate_mail(this)">
+             </div>
+           </div>
+           <div class="row">
+             <button type="button" onclick="set_name(this)" required>Enviar!</button>
+           </div>
+         </form>
        </div>
 
-       <div class="go_back_cont">
+       <div class="global_cont bottom_cont">
          <a class="main_page_link" href="../Index.html">Volver a la página principal</a>
        </div>
 
-       <footer class="footer_config">
+       <footer class="global_cont bottom_cont">
          Universidad de Alcalá
        </footer>
 
