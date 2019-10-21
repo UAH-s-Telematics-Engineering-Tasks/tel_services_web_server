@@ -56,3 +56,8 @@ function temp(t)
     t.style.color = "red";
   }
 }
+
+function check_pswd(text_box) {
+  if(text_box.value.length < 6)
+    alert("¡Mínimo 6 caracteres!");
+}
