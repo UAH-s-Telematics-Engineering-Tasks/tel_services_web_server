@@ -35,16 +35,19 @@ function passwd()
     // t.fillText("baja",10,15);
   }
   //
-  if (p.length >= 9 && p.length < 12)
+  else if (p.length >= 9 && p.length < 12)
   {
     c.style.background = "yellow";
     //t.fillText("",10,15);
     //t.fillText("media",10,15);
   }
   //
-  if (p.length >= 12)
+  else if (p.length >= 12)
   {
     c.style.background = "#00ff00";
+  }
+  else {
+    c.style.background = "none";
   }
 }
 
