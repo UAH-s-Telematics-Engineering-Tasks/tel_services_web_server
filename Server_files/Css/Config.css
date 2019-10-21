@@ -38,6 +38,7 @@
   border: 1px solid black;
   border-radius: 5px;
   box-sizing: border-box;
+  padding-left: 10px;
 }
 
 .rounded {
@@ -110,4 +111,30 @@ label {
 
 .valid {
   background-color: #00ff00
+}
+
+#canv_cont {
+  width:58%;
+  height:40px;
+  float:right
+}
+
+#canvas {
+  border:1px solid black;
+  margin-left:5px;
+  border-radius:10px
+}
+
+#pass_cont {
+  width: 100%
+}
+
+#seg_cont {
+  width:42%;
+  height:40px;
+  float:left
+}
+
+#seg_l {
+  margin-left:250px
 }

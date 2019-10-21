@@ -8,6 +8,7 @@
        <script type="text/javascript" src="../Js/Globals.js"></script>
        <script type="text/javascript" src="../Js/Map_url_parser.js"></script>
        <script type="text/javascript" src="../Js/Get_values.js"></script>
+       <script type="text/javascript" src="../Js/Config.js"></script>
        <title>Configuración</title>
      </head>
      <body>
@@ -27,19 +28,19 @@
                  <label for="countries">País:</label>
                </div>
                <div class="data_input">
-                <input class="text_input" list="count_list" name="countries" id="coutries">
-                <datalist id="count_list">
-                  <option value="España">
-                  <option value="Francia">
-                  <option value="Italia">
-                  <option value="Inglaterra">
-                  <option value="Alemania">
-                  <option value="Portugal">
-                  <option value="Rusia">
-                  <option value="Estados Unidos">
-                  <option value="China">
-                  <option value="Japón">
-                </datalist>
+                 <input class="text_input" list="count_list" name="country" id="country" onchange="pais()">
+                 <datalist id="count_list">
+                   <option value="España">
+                   <option value="Francia">
+                   <option value="Italia">
+                   <option value="Inglaterra">
+                   <option value="Alemania">
+                   <option value="Portugal">
+                   <option value="Austria">
+                   <option value="Países Bajos">
+                   <option value="Dinamarca">
+                   <option value="Suecia">
+                 </datalist>
                </div>
              </div>
 
@@ -84,9 +85,18 @@
                  <label for="pass">Password:</label>
                </div>
                <div class="data_input">
-                 <input class="text_input" type="password" name="password" pattern="12345" id="pass" required><br><br>
+                 <input class="text_input" type="password" name="password" id="pass" oninput="passwd()" required><br><br>
                </div>
              </div>
+
+            <div id="pass_cont">
+              <div id="seg_cont">
+                <label id="seg_l" for="pass">Seguridad </label><br><br>
+              </div>
+              <div id="canv_cont">
+                <canvas id="canvas" width="100" height="20"></canvas>
+              </div>
+            </div>
 
              <div>
                <!--<input type="submit" name="submit" value="Enviar datos" class="rounded" onclick="get_values()">-->
@@ -101,27 +111,37 @@
                <input type="radio" name="opcion" value="luz"> Nivel de luz <br>
                <input type="radio" name="opcion" value="movimiento"> Movimiento <br>
              </div>
+           </form>
 
              <h1 class="centered_text">Configure las alertas</h1>
 
              <div>
-               <div class="tags">
-                 <label for="tempmax">Temperatua máxima:</label>
+             <form oninput="res.value=parseInt(tempmax.value)-parseInt(tempmin.value)">
+               <div>
+                 <div class="tags">
+                   <label for="tempmax">Temperatura máxima:</label>
+                 </div>
+                 <div class="data_input">
+                   <input class="text_input" type="number" id="tempmax" name="tempmax" max="45" min="-20" onchange="temp(tempmax)">
+                 </div>
                </div>
-               <div class="data_input">
-                 <input class="text_input" type="number" id="tempmax" name="tempmax" max="45" min="-20">
-               </div>
-             </div>
 
-             <div>
+               <div>
+                 <div class="tags">
+                   <label for="tempmin">Temperatura mínima:</label>
+                 </div>
+                 <div class="data_input">
+                   <input class="text_input" type="number" id="tempmin" name="tempmin" max="45" min="-20" onchange="temp(tempmin)">
+                 </div>
+               </div>
+
                <div class="tags">
-                 <label for="tempmin">Temperatura mínima:</label>
+                 <label for="tempmin">Diferencia entre temperaturas:</label>
                </div>
-               <div class="data_input">
-                 <input class="text_input" type="number" id="tempmin" name="tempmin" max="45" min="-20">
-               </div>
-             </div>
-           </form>
+               <output name="res" id="res" ></output>
+             </form>
+           </div>
+
          </div>
 
          <div class="go_back_cont">
