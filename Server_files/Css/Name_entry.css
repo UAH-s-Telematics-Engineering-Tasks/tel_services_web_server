@@ -1,0 +1,76 @@
+/*#name_input {
+  width: 100%;
+  background-color: #00ffff;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.send {
+  border-radius:5px;
+}*/
+
+input[type=text] {
+  width: 99%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+button {
+  background-color: #ffff33;
+  margin-top: 10px;
+  margin-right: 10px;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.global_cont {
+  border-radius: 5px;
+  background-color: #cccccc;
+  padding: 20px 0 20px 0;
+}
+
+/* Floating column for labels: 25% width */
+.lab {
+  float: left;
+  width: 20%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.in {
+  float: left;
+  width: 80%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.bottom_cont {
+  text-align: center;
+  border-radius: 0px;
+}
+
+.valid {
+  background-color: #33ff33;
+}

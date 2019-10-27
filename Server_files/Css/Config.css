@@ -1,0 +1,141 @@
+.web_title {
+  background-color:#a901db;
+  color:#40ff00;
+  margin-top:0px;
+  margin-bottom:0px;
+  width:100%;
+  text-align:center;
+}
+
+.conf_cont {
+  width:100%;
+  column-count:2;
+  background-color:#ccffe6;
+  padding-top:25px;
+  padding-bottom:25px;
+}
+
+.not_so_big {
+  margin-bottom:10px;
+  margin-top: 10px;
+  text-align:center;
+}
+
+.tags {
+  float:left;
+  width:30%;
+  margin-bottom:10px;
+}
+
+.data_input {
+  float: left;
+  width: 70%;
+  margin-bottom: 10px;
+}
+
+.text_input, textarea, select {
+  width: 70%;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
+.rounded {
+  border-radius:5px;
+  margin: auto;
+  display: block;
+  cursor: crosshair;
+}
+
+.centered_text {
+  text-align: center;
+}
+
+#options {
+  margin-left:325px;
+}
+
+.go_back_cont {
+  width: 100%;
+  height:20px;
+  background-color:red;
+  float:left;
+  text-align:center;
+}
+
+.main_page_link {
+  color: black;
+}
+
+input:focus {
+  outline: none;
+  border-color: #000000;
+  box-shadow: 0 0 20px #000000;
+  border-radius: 5px;
+}
+
+input[type=radio] {
+  cursor: pointer;
+}
+
+input[type=radio]:focus {
+  border-radius: 0px;
+  border-color: none;
+  box-shadow: 0 0 0px;
+  outline: inherit;
+}
+
+@media screen and (max-width: 600px) {
+  .tags, .data_input, input[type=radio] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+label {
+  margin-left: 10px;
+}
+
+.footer_config
+{
+  background-color:#40ff00;
+  width:100%;
+  height:20px;
+  text-align:center;
+  color:blue;
+  float:left
+}
+
+/* Input Status Classes */
+
+.valid {
+  background-color: #00ff00
+}
+
+#canv_cont {
+  width:58%;
+  height:40px;
+  float:right
+}
+
+#canvas {
+  border:1px solid black;
+  margin-left:50px;
+  border-radius:10px
+}
+
+#pass_cont {
+  width: 100%
+}
+
+#seg_cont {
+  width:42%;
+  height:40px;
+  float:left
+}
+
+#seg_l {
+  margin-left:250px;
+  padding-right: 200px
+}

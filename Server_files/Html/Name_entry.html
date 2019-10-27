@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+   <html manifest="../Manifests/Caching_rules.appcache">
+     <head>
+       <meta charset="utf-8">
+       <link rel="shortcut icon" href="../Icons/Lightbulb.ico">
+       <link rel="stylesheet" href="../Css/Index.css">
+       <link rel="stylesheet" href="../Css/Config.css">
+       <link rel="stylesheet" href="../Css/Name_entry.css">
+       <title>Nombre</title>
+       <script type="text/javascript" src="../Js/Mail_validation.js"></script>
+       <script type="text/javascript" src="../Js/Set_name.js"></script>
+     </head>
+     <body>
+
+       <div class="global_cont">
+         <form action="index.html" target="_blank">
+           <div class="row">
+             <div class="lab">
+               <label for="username">Nombre</label>
+             </div>
+             <div class="in">
+               <input type="text" placeholder="Tu nombre..." name="username" id="username">
+             </div>
+           </div>
+           <div class="row">
+             <div class="lab">
+               <label for="mail">E-mail</label>
+             </div>
+             <div class="in">
+               <input type="text" placeholder="Tu e-mail..." name="mail" id="mail" oninput="validate_mail(this)">
+             </div>
+           </div>
+           <div class="row">
+             <button type="button" onclick="set_name()" required>Enviar!</button>
+           </div>
+         </form>
+       </div>
+
+       <div class="global_cont bottom_cont">
+         <a class="main_page_link" href="../Index.html">Volver a la página principal</a>
+       </div>
+
+       <footer class="global_cont bottom_cont">
+         Universidad de Alcalá
+       </footer>
+
+     </body>
+   </html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+   <html manifest="../Manifests/Caching_rules.appcache">
+     <head>
+       <meta charset="utf-8">
+       <link rel="shortcut icon" href="../Icons/Lightbulb.ico">
+       <link rel="stylesheet" href="../Css/Config.css">
+       <link rel="stylesheet" href="../Css/Index.css">
+       <script type="text/javascript" src="../Js/Globals.js"></script>
+       <script type="text/javascript" src="../Js/Map_url_parser.js"></script>
+       <script type="text/javascript" src="../Js/Get_values.js"></script>
+       <script type="text/javascript" src="../Js/Config.js"></script>
+       <title>Configuración</title>
+     </head>
+     <body>
+
+       <div class="global_cont">
+
+         <div id="config_title_cont">
+           <h1 class="web_title">Smart Room Project</h1>
+         </div>
+
+         <div class="conf_cont">
+           <form action="datos.js" target="_blank">
+             <h1 class="not_so_big">Datos de la habitación</h1>
+
+             <div>
+               <div class="tags">
+                 <label for="countries">País:</label>
+               </div>
+               <div class="data_input">
+                 <input class="text_input" list="count_list" name="country" id="country" onchange="pais()">
+                 <datalist id="count_list">
+                   <option value="España">
+                   <option value="Francia">
+                   <option value="Italia">
+                   <option value="Inglaterra">
+                   <option value="Alemania">
+                   <option value="Portugal">
+                   <option value="Austria">
+                   <option value="Países Bajos">
+                   <option value="Dinamarca">
+                   <option value="Suecia">
+                 </datalist>
+               </div>
+             </div>
+
+             <div>
+               <div class="tags">
+                 <label for="city">Ciudad:</label>
+               </div>
+               <div class="data_input">
+                 <input class="text_input" type="text" name="city" id="city">
+               </div>
+             </div>
+
+             <div>
+               <div class="tags">
+                 <label for="">Coordenadas GPS:</label>
+               </div>
+               <div class="data_input">
+                 <input class="text_input" type="text" name="coordinates" id="coordinates" oninput="validate_input(this)">
+               </div>
+             </div>
+
+             <div>
+               <div class="tags">
+                 <label for="map">Mapa URL:</label>
+               </div>
+               <div class="data_input">
+                 <input class="text_input" type="url" name="map" id="map">
+               </div>
+             </div>
+
+             <div>
+               <div class="tags">
+                 <label for="pic">Foto:</label>
+               </div>
+               <div class="data_input">
+                 <input type="file" name="pic" id="pic">
+               </div>
+             </div>
+
+             <div>
+               <div class="tags">
+                 <label for="pass">Password:</label>
+               </div>
+               <div class="data_input">
+                 <input class="text_input" type="password" name="password" id="pass" oninput="passwd()" onchange="check_pswd(this)" required><br><br>
+               </div>
+             </div>
+
+            <div id="pass_cont">
+              <div id="seg_cont">
+                <label id="seg_l" for="pass">Seguridad</label><br><br>
+              </div>
+              <div id="canv_cont">
+                <canvas id="canvas" width="100" height="20"></canvas>
+              </div>
+            </div>
+
+             <div>
+               <!--<input type="submit" name="submit" value="Enviar datos" class="rounded" onclick="get_values()">-->
+               <button type="button" name="submit" class="rounded" onclick="get_values()">Enviar datos</button>
+             </div>
+
+             <h1 class="centered_text">Seleccione los sensores</h1>
+             <div id="options">
+               <input type="radio" name="opcion" value="temperatura"> Temperatura <br>
+               <input type="radio" name="opcion" value="humedad"> Humedad <br>
+               <input type="radio" name="opcion" value="sonido"> Nivel de sonido <br>
+               <input type="radio" name="opcion" value="luz"> Nivel de luz <br>
+               <input type="radio" name="opcion" value="movimiento"> Movimiento <br>
+             </div>
+           </form>
+
+             <h1 class="centered_text">Configure las alertas</h1>
+
+             <div>
+             <form oninput="res.value=parseInt(tempmax.value)-parseInt(tempmin.value)">
+               <div>
+                 <div class="tags">
+                   <label for="tempmax">Temperatura máxima:</label>
+                 </div>
+                 <div class="data_input">
+                   <input class="text_input" type="number" id="tempmax" name="tempmax" max="45" min="-20" onchange="temp(tempmax)">
+                 </div>
+               </div>
+
+               <div>
+                 <div class="tags">
+                   <label for="tempmin">Temperatura mínima:</label>
+                 </div>
+                 <div class="data_input">
+                   <input class="text_input" type="number" id="tempmin" name="tempmin" max="45" min="-20" onchange="temp(tempmin)">
+                 </div>
+               </div>
+
+               <div class="tags">
+                 <label for="tempmin">Diferencia entre temperaturas:</label>
+               </div>
+               <output name="res" id="res" ></output>
+             </form>
+           </div>
+
+         </div>
+
+         <div class="go_back_cont">
+           <a class="main_page_link" href="../Index.html">Volver a la página principal</a>
+         </div>
+
+         <footer class="footer_config">
+           Universidad de Alcalá
+         </footer>
+
+       </div>
+     </body>
+   </html>

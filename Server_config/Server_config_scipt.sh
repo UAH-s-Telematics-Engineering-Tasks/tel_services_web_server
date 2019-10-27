@@ -3,8 +3,9 @@
 #sudo apt install apache2 #Apache2 is a daemon (hhtp) that listens for web requests and answers them!
 
 sudo mkdir /var/www/smart_room_root # Create a folder containing the webpage
-sudo mkdir /var/www/smart_room_root/css # Create a subfolder to store the .css files and keep everything tidy!
-sudo mkdir /var/www/smart_room_root/img # Create a subfolder to store the imgages and keep everything tidy!
+
+sudo git clone https://github.com/pcolladosoto/tel_services_web_server
+sudo git checkout pablo
 
 sudo  cp smart_room.conf /etc/apache2/sites-available/smart_room.conf # Copy the premade conf file to the appropriate location
 
@@ -20,7 +21,7 @@ sudo usermod -a -G www-data web_admin # Add the user to the www-data group!
 
 sudo cp updated_shells /etc/shells # Declare nologin as a valid shell. Needed for some daemons...
 
-sudo chgrp www-data /var/www/smart_room_root -R #Change the directory's group
-sudo chown web_admin /var/www/smart_room_root -R # Change the directory's owner
+sudo chgrp www-data /var/www/smart_room_root/Server_files -R #Change the directory's group
+sudo chown web_admin /var/www/smart_room_root/Server_files -R # Change the directory's owner
 
 #Don't forget to add <serverIP> sroom.test.org to your /etc/hosts file!
