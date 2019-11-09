@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Glider Gallery</title>
+    <link rel="stylesheet" type="text/css" href="../Ext_libs/Glider/glider.css" />
+    <script src="../Ext_libs/Glider/glider.js"></script>
+    <script>
+      window.addEventListener('load',function(){
+        window._ = new Glider(document.querySelector('.glider'), {
+            slidesToShow: 1, //'auto',
+            slidesToScroll: 1,
+            itemWidth: 150,
+            draggable: true,
+            scrollLock: false,
+            dots: '#dots',
+            rewind: true,
+            arrows: {
+                prev: '.glider-prev',
+                next: '.glider-next'
+            }
+        });
+      });
+    </script>
+
+    <style type="text/css">
+        * {
+            box-sizing: border-box
+        }
+        html, body {
+            width: 100%;
+            overflow: hidden;
+        }
+        .glider-contain {
+            width: 90%;
+            max-width: 997px;
+            margin: 0 auto;
+        }
+        .glider-slide {
+            min-height: 150px;
+        }
+        .glider-slide img {
+            width: 100%;
+        }
+        h1 {
+          text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Glider Gallery</h1>
+    <div class="glider-contain">
+        <div class="glider">
+            <div><img alt="Test" src="../Img/Kanagawa.jpg"></div>
+            <div><img alt="Test" src="../Img/Kanagawa.jpg"></div>
+            <div><img alt="Test" src="../Img/Kanagawa.jpg"></div>
+            <div><img alt="Test" src="../Img/Kanagawa.jpg"></div>
+            <div><img alt="Test" src="../Img/Kanagawa.jpg"></div>
+            <div><img alt="Test" src="../Img/Kanagawa.jpg"></div>
+            <div><img alt="Test" src="../Img/Kanagawa.jpg"></div>
+            <div><img alt="Test" src="../Img/Kanagawa.jpg"></div>
+            <div><img alt="Test" src="../Img/Kanagawa.jpg"></div>
+            <div><img alt="Test" src="../Img/Kanagawa.jpg"></div>
+            <div><img alt="Test" src="../Img/Kanagawa.jpg"></div>
+            <div><img alt="Test" src="../Img/Kanagawa.jpg"></div>
+            <div><img alt="Test" src="../Img/Kanagawa.jpg"></div>
+            <div><img alt="Test" src="../Img/Kanagawa.jpg"></div>
+            <div><img alt="Test" src="../Img/Kanagawa.jpg"></div>
+            <div><img alt="Test" src="../Img/Kanagawa.jpg"></div>
+        </div>
+        <button class="glider-prev">&laquo;</button>
+        <button class="glider-next">&raquo;</button>
+        <div id="dots"></div>
+    </div>
+  </body>
+</html>
