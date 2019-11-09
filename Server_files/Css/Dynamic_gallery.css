@@ -20,13 +20,13 @@ p {
   font-family: courier;
 }
 
-.popup_selected {
+.selected {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   top: 0;
-  background-color: pink;
+  background-color: purple;
   overflow: hidden;
   width: 300px;
   height: 200px;
@@ -35,9 +35,25 @@ p {
   opacity: 0.7;
   text-align: center;
 }
-p.popup_selected {
+.selected_text {
   font-weight: bold;
   font-family: courier;
   display: inline-block;
   margin-top: 30%;
+}
+
+.selected_static {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: green;
+  overflow: hidden;
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  box-sizing: border-box;
+  opacity: 0.7;
+  text-align: center;
 }
