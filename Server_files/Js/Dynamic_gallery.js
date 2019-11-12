@@ -14,7 +14,7 @@ $(document).ready(function () {
     $("div.selected_static").hide();
     $("div.selected_static:eq(" + index + ")").show();
     $("div.caption").children()[0].remove();
-    $("div.caption").append($("<p>" + (index + 1) + "</p>"));
+    $("div.caption").append($("<p>" + $("div.main_image").children("div.info_popup").children("img")[0].alt + "</p>"));
   }
   $("div.info_popup").children("div").each(function () {
     $(this).append($('<p class="selected_text">'+ $(this).siblings()[0].alt + '</p>'));
