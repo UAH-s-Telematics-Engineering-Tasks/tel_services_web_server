@@ -1,8 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <title>Glider Gallery</title>
+    <link rel="shortcut icon" href="../Icons/Lightbulb.ico">
     <link rel="stylesheet" type="text/css" href="../Ext_libs/Glider/glider.css" />
+    <link rel="stylesheet" href="../Css/Name_entry.css">
+    <link rel="stylesheet" href="../Css/Glider_gallery.css">
     <script src="../Ext_libs/Glider/glider.js"></script>
     <script>
       window.addEventListener('load',function(){
@@ -21,32 +24,9 @@
         });
       });
     </script>
-
-    <style type="text/css">
-        * {
-            box-sizing: border-box
-        }
-        html, body {
-            width: 100%;
-            overflow: hidden;
-        }
-        .glider-contain {
-            width: 90%;
-            max-width: 997px;
-            margin: 0 auto;
-        }
-        .glider-slide {
-            min-height: 150px;
-        }
-        .glider-slide img {
-            width: 100%;
-        }
-        h1 {
-          text-align: center;
-        }
-    </style>
   </head>
   <body>
+    <div class="global_cont">
     <h1>Glider Gallery</h1>
     <div class="glider-contain">
         <div class="glider">
@@ -71,5 +51,14 @@
         <button class="glider-next">&raquo;</button>
         <div id="dots"></div>
     </div>
+
+    <div class="global_cont bottom_cont">
+      <a class="main_page_link" href="../Index.html">Volver a la página principal</a>
+    </div>
+
+    <footer class="global_cont bottom_cont">
+      Universidad de Alcalá
+    </footer>
+  </div>
   </body>
 </html>
