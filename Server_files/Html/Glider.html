@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Glider Gallery</title>
+    <link rel="shortcut icon" href="../Icons/Lightbulb.ico">
+    <link rel="stylesheet" type="text/css" href="../Ext_libs/Glider/glider.css" />
+    <link rel="stylesheet" href="../Css/Name_entry.css">
+    <link rel="stylesheet" href="../Css/Glider_gallery.css">
+    <script src="../Ext_libs/Glider/glider.js"></script>
+    <script>
+      window.addEventListener('load',function(){
+        new Glider(document.querySelector('.glider'), {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            itemWidth: 150,
+            draggable: true,
+            scrollLock: false,
+            dots: '#dots',
+            rewind: true,
+            arrows: {
+                prev: '.glider-prev',
+                next: '.glider-next'
+            }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="global_cont">
+    <h1>Glider Gallery</h1>
+    <div class="glider-contain">
+        <div class="glider">
+            <div><img src="../Img/Kanagawa.jpg" alt="Great Wave Off Kanagawa"></div>
+            <div><img src="../Img/Jpn_a.jpeg" alt="Ukiyo-e Painting"></div>
+            <div><img src="../Img/Jpn_b.jpeg" alt="Another one"></div>
+            <div><img src="../Img/Jpn_c.jpeg" alt="Next"></div>
+            <div><img src="../Img/Jpn_d.jpeg" alt="Yet another"></div>
+            <div><img src="../Img/Jpn_e.jpeg" alt="Almost there"></div>
+            <div><img src="../Img/Jpn_f.jpeg" alt="What a nice painting!"></div>
+            <div><img src="../Img/Jpn_g.jpeg" alt="Finished"></div>
+        </div>
+        <button class="glider-prev">&laquo;</button>
+        <button class="glider-next">&raquo;</button>
+        <div id="dots"></div>
+    </div>
+
+    <div class="global_cont bottom_cont">
+      <a class="main_page_link" href="../Index.html">Volver a la página principal</a>
+    </div>
+
+    <footer class="global_cont bottom_cont">
+      Universidad de Alcalá
+    </footer>
+  </div>
+  </body>
+</html>
