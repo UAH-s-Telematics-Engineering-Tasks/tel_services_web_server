@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  $("div.popup").hide();
   $("div.popup").each(function () {
     $(this).append($('<p class="popup">' + $(this).siblings()[0].alt + '</p>'));
   });
