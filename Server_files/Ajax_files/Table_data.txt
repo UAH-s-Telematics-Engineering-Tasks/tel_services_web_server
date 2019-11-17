@@ -1,0 +1,48 @@
+<table_data>
+  <tbl>
+    <entry>
+      <city>Tatooine</city>
+      <temp>25</temp>
+      <hum>48</hum>
+      <noise>150</noise>
+      <light>120</light>
+      <color>000000</color>
+    </entry>
+
+    <entry>
+      <city>Hoth</city>
+      <temp>30</temp>
+      <hum>69</hum>
+      <noise>180</noise>
+      <light>211</light>
+      <color>FF0000</color>
+    </entry>
+
+    <entry>
+      <city>Coruscant</city>
+      <temp>20</temp>
+      <hum>40</hum>
+      <noise>50</noise>
+      <light>150</light>
+      <color>00FF00</color>
+    </entry>
+
+    <entry>
+      <city>Dagobah</city>
+      <temp>18</temp>
+      <hum>42</hum>
+      <noise>211</noise>
+      <light>180</light>
+      <color>0000FF</color>
+    </entry>
+
+    <entry>
+      <city>Bespin</city>
+      <temp>35</temp>
+      <hum>41</hum>
+      <noise>159</noise>
+      <light>50</light>
+      <color>FFFFFF</color>
+    </entry>
+  </tbl>
+</table_data>

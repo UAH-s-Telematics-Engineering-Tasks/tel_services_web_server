@@ -31,6 +31,7 @@ $(document).ready(function() {
     $("#sel2").css("background-color", "white");
     $("#sel3").css("background-color", "white");
     $("#sel4").css("background-color", "white");
+    get_n_create_table(this.id.substr(3));
   });
 
   $("#bot2").click(function() {
@@ -44,6 +45,7 @@ $(document).ready(function() {
     $("#sel1").css("background-color", "white");
     $("#sel3").css("background-color", "white");
     $("#sel4").css("background-color", "white");
+    get_n_create_table(this.id.substr(3));
   });
 
   $("#bot3").click(function() {
@@ -57,6 +59,7 @@ $(document).ready(function() {
     $("#sel1").css("background-color", "white");
     $("#sel2").css("background-color", "white");
     $("#sel4").css("background-color", "white");
+    get_n_create_table(this.id.substr(3));
   });
 
   $("#bot4").click(function() {
@@ -70,5 +73,6 @@ $(document).ready(function() {
     $("#sel1").css("background-color", "white");
     $("#sel2").css("background-color", "white");
     $("#sel3").css("background-color", "white");
+    get_n_create_table(this.id.substr(3));
   });
 });
