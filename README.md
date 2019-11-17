@@ -4,5 +4,5 @@ This repository contains the configuration files of the server as well as all th
 And remember:
 
 <div style="text-align: center">
-  <img src="Memes/It_works.jpg">
+  <img src="./Memes/It_works.jpg">
 </div>
