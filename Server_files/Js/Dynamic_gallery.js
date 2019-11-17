@@ -23,8 +23,6 @@ $(document).ready(function () {
   $("div.main_image").append($("div.info_popup:eq(0)").clone());
   $("div.main_image").children().children("div").removeClass("selected_static");
   $("div.main_image").children().children("div").addClass("selected");
-  // $("div.selected_static").hide();
-  // $("div.selected").hide();
   $("div.selected_static:eq(0)").show();
 
   $("div.main_image").children().children("img").mouseenter(function () {
