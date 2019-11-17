@@ -32,6 +32,6 @@ function parse_data(resp, id) {
               ent.getElementsByTagName("light")[0].childNodes[0].nodeValue +
               '</td><td>' +
               ent.getElementsByTagName("color")[0].childNodes[0].nodeValue +
-              '</td></tr></tbody>';
-    document.getElementById("tab" + id).innerHTML = table;
+              '</td></tr>';
+    document.getElementById("tab" + id).innerHTML = table + '</tbody>';
 }
