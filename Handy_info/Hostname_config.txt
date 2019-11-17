@@ -1,1 +1,0 @@
-If we have a hostname different than sroom.test.org in /etc/hosts the HTTP GET request will carry THAT hostname in its header fields and Apache won't be able to find the sroom web and serve us the default one... The IP resolution will work no matter the name we use in /etc/hosts, but the hostname in the HTTP message does change! This has been shown with a Wireshark Inspection
