@@ -1,7 +1,6 @@
 $(document).ready(function() {
   $("#pag1").show();
   get_n_create_table(1);
-  style_me_up(1);
   $("#bot1").css("background-color", "yellow");
   $("#bot2").css("background-color", "white");
   $("#bot3").css("background-color", "white");
@@ -28,7 +27,6 @@ $(document).ready(function() {
     $("#sel3").css("background-color", "white");
     $("#sel4").css("background-color", "white");
     get_n_create_table(this.id.substr(3));
-    style_me_up(this.id.substr(3));
   });
 
   $("#bot2").click(function() {
@@ -43,7 +41,6 @@ $(document).ready(function() {
     $("#sel3").css("background-color", "white");
     $("#sel4").css("background-color", "white");
     get_n_create_table(this.id.substr(3));
-    style_me_up(this.id.substr(3));
   });
 
   $("#bot3").click(function() {
@@ -58,7 +55,6 @@ $(document).ready(function() {
     $("#sel2").css("background-color", "white");
     $("#sel4").css("background-color", "white");
     get_n_create_table(this.id.substr(3));
-    style_me_up(this.id.substr(3));
   });
 
   $("#bot4").click(function() {
@@ -73,6 +69,5 @@ $(document).ready(function() {
     $("#sel2").css("background-color", "white");
     $("#sel3").css("background-color", "white");
     get_n_create_table(this.id.substr(3));
-    style_me_up(this.id.substr(3));
   });
 });
