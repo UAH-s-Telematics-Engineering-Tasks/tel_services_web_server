@@ -10,7 +10,7 @@ function get_n_create_table(trig) {
       alert("ReadyState == 4");
     }
   };
-  ajax_obj.open("GET", "../../Ajax_files/Table_data.txt", true);
+  ajax_obj.open("GET", "../Ajax_files/Table_data.txt", true);
   ajax_obj.send();
   alert("Finished get_n_create()");
 }
