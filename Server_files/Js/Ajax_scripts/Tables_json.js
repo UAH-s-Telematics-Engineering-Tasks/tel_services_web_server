@@ -3,7 +3,7 @@ var TABLE_HEADER = '<tbody><tr><th><button type="button" name="button" class="ro
 var SHOW_BUTTON = '<tr><td><button class="rounded no_back" type="button" name="button">Ocultar</button></td>';
 
 function get_n_create_table(trig) {
-  $.getJSON("../Ajax_files/Table_data.json", function() {
+  $.getJSON("../Ajax_files/Table_data.json", trig, function() {
     parse_data(data, trig);
   });
   // var ajax_obj = new XMLHttpRequest();
