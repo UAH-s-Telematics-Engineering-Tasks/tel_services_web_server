@@ -5,14 +5,13 @@ var SHOW_BUTTON = '<tr><td><button class="rounded no_back" type="button" name="b
 function get_n_create_table(trig) {
   var ajax_obj = new XMLHttpRequest();
   ajax_obj.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 200) {
-      parse_data(this, trig);
+    if (this.readyState == 4) {
+      // parse_data(this, trig);
       alert("ReadyState == 4");
     }
   };
   ajax_obj.open("GET", "Table_data.txt", true);
   ajax_obj.send();
-  alert("Finished get_n_create()");
 }
 
 function parse_data(resp, id) {
