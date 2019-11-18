@@ -1,11 +1,12 @@
 $(document).ready(function() {
-  $("#cont").children("div").hide();
+  // $("#cont").children("div").hide();
   $("#pag1").show();
-  $("tr:odd").css("background-color", "#00FF40");
-  $("tr:even").css("background-color", "#FA58F4");
-  $("tr:nth-child(1)").css("background-color", "#cccccc");
-  $("td:nth-child(1)").css("background-color", "#cccccc");
-  $("th:nth-child(1)").css("background-color", "#cccccc");
+  get_n_create_table(1);
+  // $("tr:odd").css("background-color", "#00FF40");
+  // $("tr:even").css("background-color", "#FA58F4");
+  // $("tr:nth-child(1)").css("background-color", "#cccccc");
+  // $("td:nth-child(1)").css("background-color", "#cccccc");
+  // $("th:nth-child(1)").css("background-color", "#cccccc");
   $("#bot1").css("background-color", "yellow");
   $("#bot2").css("background-color", "white");
   $("#bot3").css("background-color", "white");
