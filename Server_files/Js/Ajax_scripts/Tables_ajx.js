@@ -2,8 +2,6 @@ var TABLE_HEADER = '<tbody><tr><th><button type="button" name="button" class="ro
 
 var SHOW_BUTTON = '<tr><td><button class="rounded no_back" type="button" name="button">Ocultar</button></td>';
 
-alert("I'm loaded!");
-
 function get_n_create_table(trig) {
   var ajax_obj = new XMLHttpRequest();
   ajax_obj.onreadystatechange = function () {
@@ -12,6 +10,7 @@ function get_n_create_table(trig) {
   };
   ajax_obj.open("GET", "../../Ajax_files/Table_data.txt", true);
   ajax_obj.send();
+  alert("Finished get_n_create()");
 }
 
 function parse_data(resp, id) {
@@ -36,4 +35,5 @@ function parse_data(resp, id) {
               '</td></tr>';
 
     document.getElementById("tab" + id).innerHTML = table + '</tbody>';
+    alert("Finished parse_data()");
 }
