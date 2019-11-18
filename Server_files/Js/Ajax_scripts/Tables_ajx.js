@@ -38,9 +38,9 @@ function parse_data(resp, id) {
 }
 
 function style_me_up(n) {
-  $("tr:odd").css("background-color", "#00FF40");
-  $("tr:even").css("background-color", "#FA58F4");
-  $("tr:nth-child(1)").css("background-color", "#cccccc");
-  $("td:nth-child(1)").css("background-color", "#cccccc");
-  $("th:nth-child(1)").css("background-color", "#cccccc");
+  $("#tab" + n + ":tr:odd").css("background-color", "#00FF40");
+  $("#tab" + n + ":tr:even").css("background-color", "#FA58F4");
+  $("#tab" + n + ":tr:nth-child(1)").css("background-color", "#cccccc");
+  $("#tab" + n + ":td:nth-child(1)").css("background-color", "#cccccc");
+  $("#tab" + n + ":th:nth-child(1)").css("background-color", "#cccccc");
 }
