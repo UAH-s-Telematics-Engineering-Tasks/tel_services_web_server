@@ -16,9 +16,11 @@ function get_n_create_table(trig) {
 }
 
 function parse_data(resp, id) {
+  alert("Hello!");
   var table = TABLE_HEADER;
 
-  for (const ent of JSON.parse(resp.responseText).tables[id - 1])
+  // for (const ent of JSON.parse(resp.responseText).tables[id - 1])
+    for (const ent of resp.tables[id - 1])
     table +=  SHOW_BUTTON +
               '<td class="left">' +
               ent.city +
