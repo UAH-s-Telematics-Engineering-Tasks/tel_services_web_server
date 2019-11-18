@@ -1,6 +1,7 @@
 $(document).ready(function() {
   $("#pag1").show();
   get_n_create_table(1);
+  style_me_up(1);
   $("#bot1").css("background-color", "yellow");
   $("#bot2").css("background-color", "white");
   $("#bot3").css("background-color", "white");
