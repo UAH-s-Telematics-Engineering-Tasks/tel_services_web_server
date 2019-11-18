@@ -3,24 +3,16 @@ var TABLE_HEADER = '<tbody><tr><th><button type="button" name="button" class="ro
 var SHOW_BUTTON = '<tr><td><button class="rounded no_back" type="button" name="button">Ocultar</button></td>';
 
 function get_n_create_table(trig) {
-  $.getJSON("../Ajax_files/Table_data.json", trig, function(data) {
-    parse_data(data, trig);
+  /* We need to declare the parameters we are going to use in the callback! */
+  $.getJSON("../Ajax_files/Table_data.json", trig, function(recv_obj) {
+    parse_data(recv_obj, trig);
   });
-  // var ajax_obj = new XMLHttpRequest();
-  // ajax_obj.onreadystatechange = function () {
-  //   if (this.readyState == 4 && this.status == 200)
-  //     parse_data(this, trig);
-  // };
-  // ajax_obj.open("GET", "../Ajax_files/Table_data.json", true);
-  // ajax_obj.send();
 }
 
 function parse_data(resp, id) {
-  alert("Hello!");
   var table = TABLE_HEADER;
 
-  // for (const ent of JSON.parse(resp.responseText).tables[id - 1])
-    for (const ent of resp.tables[id - 1])
+  for (const ent of resp.tables[id - 1])
     table +=  SHOW_BUTTON +
               '<td class="left">' +
               ent.city +
@@ -36,9 +28,9 @@ function parse_data(resp, id) {
               ent.color +
               '</td></tr>';
 
-    document.getElementById("tab" + id).innerHTML = table + '</tbody>';
+  document.getElementById("tab" + id).innerHTML = table + '</tbody>';
 
-    style_me_up(id);
+  style_me_up(id);
 }
 
 function style_me_up(n) {
