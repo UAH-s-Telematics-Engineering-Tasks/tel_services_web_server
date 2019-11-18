@@ -8,7 +8,8 @@ function get_n_create_table(trig) {
     if (this.readyState == 4 && this.status == 200)
       parse_data(this, trig);
   };
-  ajax_obj.open("GET", "Table_data.xml", true);
+  // ajax_obj.open("GET", "Table_data.xml", true);
+  ajax_obj.open("GET", "../Ajax_files/Table_data.xml", true);
   ajax_obj.send();
 }
 
