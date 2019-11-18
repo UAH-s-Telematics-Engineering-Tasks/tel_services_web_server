@@ -17,8 +17,8 @@ function parse_data(resp, id) {
   var table = TABLE_HEADER;
 
   /* TODO: Use alert()s to find out whether you are getting to the elements you want... resp.responseXML.getElementsByTagName("tbl")[id].childNodes should get the <entry> at index id... Check the lengths to see if you are right, I think so... Find info @ https://www.w3schools.com/xml/dom_nodes_navigate.asp and related pages! */
-  alert("Length: " + resp.responseXML.getElementsByTagName("tbl")[0].childNodes.length);
-  for (const ent of resp.responseXML.getElementsByTagName("tbl")[id - 1].childNodes)
+  alert("Length: " + resp.responseXML.getElementsByTagName("tbl")[0].getElementsByTagName("entry").length);
+  for (const ent of resp.responseXML.getElementsByTagName("tbl")[id - 1].getElementsByTagName("entry"))
     table +=  SHOW_BUTTON +
               '<td class="left">' +
               ent.getElementsByTagName("city")[0].childNodes[0].nodeValue +
