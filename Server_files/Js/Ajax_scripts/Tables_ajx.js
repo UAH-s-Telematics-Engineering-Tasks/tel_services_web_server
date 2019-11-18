@@ -6,7 +6,7 @@ function get_n_create_table(trig) {
   var ajax_obj = new XMLHttpRequest();
   ajax_obj.onreadystatechange = function () {
     if (this.readyState == 4) {
-      // parse_data(this, trig);
+      parse_data(this, trig);
       alert("ReadyState == 4");
     }
   };
