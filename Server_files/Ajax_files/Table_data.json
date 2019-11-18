@@ -1,0 +1,172 @@
+{
+    [
+      [
+        {
+          "city":   "Tatooine",
+          "temp":   25,
+          "hum":    48,
+          "noise":  150,
+          "light":  120,
+          "color":  000000
+        },
+        {
+          "city":   "Hoth",
+          "temp":   25,
+          "hum":    48,
+          "noise":  150,
+          "light":  120,
+          "color":  000000
+        },
+        {
+          "city":   "Coruscant",
+          "temp":   25,
+          "hum":    48,
+          "noise":  150,
+          "light":  120,
+          "color":  000000
+        },
+        {
+          "city":   "Dagobah",
+          "temp":   25,
+          "hum":    48,
+          "noise":  150,
+          "light":  120,
+          "color":  000000
+        },
+        {
+          "city":   "Bespin",
+          "temp":   25,
+          "hum":    48,
+          "noise":  150,
+          "light":  120,
+          "color":  000000
+        }
+      ],
+      [
+        {
+          "city":   "Tokyo",
+          "temp":   25,
+          "hum":    48,
+          "noise":  150,
+          "light":  120,
+          "color":  000000
+        },
+        {
+          "city":   "Kyoto",
+          "temp":   25,
+          "hum":    48,
+          "noise":  150,
+          "light":  120,
+          "color":  000000
+        },
+        {
+          "city":   "Osaka",
+          "temp":   25,
+          "hum":    48,
+          "noise":  150,
+          "light":  120,
+          "color":  000000
+        },
+        {
+          "city":   "Sapporo",
+          "temp":   25,
+          "hum":    48,
+          "noise":  150,
+          "light":  120,
+          "color":  000000
+        },
+        {
+          "city":   "Fukushima",
+          "temp":   25,
+          "hum":    48,
+          "noise":  150,
+          "light":  120,
+          "color":  000000
+        }
+      ],
+      [
+        {
+          "city":   "Neptuno",
+          "temp":   25,
+          "hum":    48,
+          "noise":  150,
+          "light":  120,
+          "color":  000000
+        },
+        {
+          "city":   "Plutón",
+          "temp":   25,
+          "hum":    48,
+          "noise":  150,
+          "light":  120,
+          "color":  000000
+        },
+        {
+          "city":   "Marte",
+          "temp":   25,
+          "hum":    48,
+          "noise":  150,
+          "light":  120,
+          "color":  000000
+        },
+        {
+          "city":   "Júpiter",
+          "temp":   25,
+          "hum":    48,
+          "noise":  150,
+          "light":  120,
+          "color":  000000
+        },
+        {
+          "city":   "Saturno",
+          "temp":   25,
+          "hum":    48,
+          "noise":  150,
+          "light":  120,
+          "color":  000000
+        }
+      ],
+      [
+        {
+          "city":   "Edinburgo",
+          "temp":   25,
+          "hum":    48,
+          "noise":  150,
+          "light":  120,
+          "color":  000000
+        },
+        {
+          "city":   "Londres",
+          "temp":   25,
+          "hum":    48,
+          "noise":  150,
+          "light":  120,
+          "color":  000000
+        },
+        {
+          "city":   "Cardiff",
+          "temp":   25,
+          "hum":    48,
+          "noise":  150,
+          "light":  120,
+          "color":  000000
+        },
+        {
+          "city":   "Oxford",
+          "temp":   25,
+          "hum":    48,
+          "noise":  150,
+          "light":  120,
+          "color":  000000
+        },
+        {
+          "city":   "Brighton",
+          "temp":   25,
+          "hum":    48,
+          "noise":  150,
+          "light":  120,
+          "color":  000000
+        }
+      ]
+    ]
+}
