@@ -4,16 +4,23 @@ var SHOW_BUTTON = '<tr><td><button class="rounded no_back" type="button" name="b
 
 function get_n_create_table(trig) {
   alert("Entered get_n_create_table()");
-  $.getJSON("../Ajax_files/Table_data.json", function() {
-    parse_data(data, trig);
-  });
+  // $.getJSON("../Ajax_files/Table_data.json", function() {
+    // parse_data(data, trig);
+  // });
+  var ajax_obj = new XMLHttpRequest();
+  ajax_obj.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200)
+      parse_data(this, trig);
+  };
+  ajax_obj.open("GET", "../Ajax_files/Table_data.json", true);
+  ajax_obj.send();
 }
 
 function parse_data(resp, id) {
   alert("Entered parse_data()");
   var table = TABLE_HEADER;
 
-  for (const ent of resp[0][id - 1])
+  for (const ent of resp.responseText[0][id - 1])
     table +=  SHOW_BUTTON +
               '<td class="left">' +
               ent.city +
