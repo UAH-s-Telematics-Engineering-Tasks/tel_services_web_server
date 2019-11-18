@@ -20,7 +20,7 @@ function parse_data(resp, id) {
   alert("Entered parse_data()");
   var table = TABLE_HEADER;
 
-  for (const ent of resp.responseText[0][id - 1])
+  for (const ent of JSON.parse(resp.responseText)[0][id - 1])
     table +=  SHOW_BUTTON +
               '<td class="left">' +
               ent.city +
