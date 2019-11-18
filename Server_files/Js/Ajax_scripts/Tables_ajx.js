@@ -38,9 +38,9 @@ function parse_data(resp, id) {
 }
 
 function style_me_up(n) {
-  $("#tab" + n).children("tr:odd").css("background-color", "#00FF40");
-  $("#tab" + n).children("tr:even").css("background-color", "#FA58F4");
-  $("#tab" + n).children("tr:nth-child(1)").css("background-color", "#cccccc");
-  $("#tab" + n).children("td:nth-child(1)").css("background-color", "#cccccc");
-  $("#tab" + n).children("th:nth-child(1)").css("background-color", "#cccccc");
+  $("tr:odd").css("background-color", "#00FF40");
+  $("tr:even").css("background-color", "#FA58F4");
+  $("tr:nth-child(1)").css("background-color", "#cccccc");
+  $("td:nth-child(1)").css("background-color", "#cccccc");
+  $("th:nth-child(1)").css("background-color", "#cccccc");
 }
