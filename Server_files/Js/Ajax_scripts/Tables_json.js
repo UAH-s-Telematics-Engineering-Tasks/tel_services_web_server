@@ -3,12 +3,14 @@ var TABLE_HEADER = '<tbody><tr><th><button type="button" name="button" class="ro
 var SHOW_BUTTON = '<tr><td><button class="rounded no_back" type="button" name="button">Ocultar</button></td>';
 
 function get_n_create_table(trig) {
+  alert("Entered get_n_create_table()");
   $.getJSON("../Ajax_files/Table_data.json", function() {
     parse_data(data, trig);
   });
 }
 
 function parse_data(resp, id) {
+  alert("Entered parse_data()");
   var table = TABLE_HEADER;
 
   for (const ent of resp[0][id - 1])
@@ -33,6 +35,7 @@ function parse_data(resp, id) {
 }
 
 function style_me_up(n) {
+  alert("Entered style_me_up()");
   $("#tab" + n + " tr:odd").css("background-color", "#00FF40");
   $("#tab" + n + " tr:even").css("background-color", "#FA58F4");
   $("#tab" + n + " tr:nth-child(1)").css("background-color", "#cccccc");
