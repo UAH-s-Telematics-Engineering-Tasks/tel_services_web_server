@@ -6,8 +6,8 @@ function get_n_create_table(trig) {
   var ajax_obj = new XMLHttpRequest();
   ajax_obj.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
+      alert("ReadyState == 4 && status == 200");
       parse_data(this, trig);
-      alert("ReadyState == 4");
     }
   };
   ajax_obj.open("GET", "Table_data.xml", true);
@@ -15,11 +15,10 @@ function get_n_create_table(trig) {
 }
 
 function parse_data(resp, id) {
-  alert("Hey!");
   var table = TABLE_HEADER;
 
   /* TODO: Use alert()s to find out whether you are getting to the elements you want... resp.responseXML.getElementsByTagName("tbl")[id].childNodes should get the <entry> at index id... Check the lengths to see if you are right, I think so... Find info @ https://www.w3schools.com/xml/dom_nodes_navigate.asp and related pages! */
-
+  alert("Length: " + resp.responseXML.getElementsByTagName("tbl").length);
   for (const ent of resp.responseXML.getElementsByTagName("tbl")[id].childNodes)
     table +=  SHOW_BUTTON +
               '<td class="left">' +
