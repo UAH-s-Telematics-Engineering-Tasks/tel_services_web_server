@@ -35,4 +35,5 @@ function parse_data(resp, id) {
     document.getElementById("tab" + id).innerHTML = table + '</tbody>';
 
     style_me_up(id);
+    add_functionality();
 }

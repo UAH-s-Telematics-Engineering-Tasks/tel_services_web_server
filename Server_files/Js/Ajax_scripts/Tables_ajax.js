@@ -7,13 +7,15 @@ $(document).ready(function() {
   $("#bot3").css("background-color", "white");
   $("#sel1").css("background-color", "red");
 
-  $("button.no_back").click(function() {
-    $(this).parent().parent().hide();
-  });
+ function add_functionality() {
+   $("button.no_back").click(function() {
+     $(this).parent().parent().hide();
+   });
 
-  $("button.show_hidden").click(function() {
-    $(this).parent().parent().siblings().show();
-  });
+   $("button.show_hidden").click(function() {
+     $(this).parent().parent().siblings().show();
+   });
+ }
 
   $("#bot1").click(function() {
     $("#cont").children("div").hide();
