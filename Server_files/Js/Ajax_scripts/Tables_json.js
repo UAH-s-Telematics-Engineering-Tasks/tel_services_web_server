@@ -4,7 +4,6 @@ var SHOW_BUTTON = '<tr><td><button class="rounded no_back" type="button" name="b
 
 function get_n_create_table(trig) {
   /* We need to declare the parameters we are going to use in the callback! */
-  // $.getJSON("../Ajax_files/Table_data.json", trig, function(recv_obj) {
   $.getJSON("../Ajax_files/Table_data.json", function(recv_obj) {
     parse_data(recv_obj, trig);
   });
