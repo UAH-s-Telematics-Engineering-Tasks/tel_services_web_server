@@ -19,20 +19,19 @@ function mostrar(count, txt)
       document.getElementById("city").value = txt.split("\n")[0];
       break;
 
-    case "Fracncia":
+    case "Francia":
       document.getElementById("city").value = txt.split("\n")[1];
-      break;
-
-    case "Italia":
-      document.getElementById("city").value = txt.split("\n")[2];
       break;
 
     case "Inglaterra":
       document.getElementById("city").value = txt.split("\n")[3];
       break;
 
+    case "Italia":
+      document.getElementById("city").value = txt.split("\n")[2];
+      break;
+
     default:
       document.getElementById("city").value = txt.split("\n")[4];
-
   }
 }
