@@ -33,12 +33,15 @@ function loadDoc(pais)
 
   xhttp.open("GET", "../Ajax_files/Cities_ajax.txt", true);
   xhhtp.send();
+  alert("Reached the end of loadDoc()");
 
 }
 
 function mostrar(count, txt)
 {
   alert("Hi from mostrar()");
+  for (ent of txt.split("\n"))
+    alert(ent);
   switch (count) {
     case "España":
       document.getElementById("city").value = txt.split("\n")[0];
