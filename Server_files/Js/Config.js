@@ -17,6 +17,10 @@ function pais()
   {
     alert("Pais Erroneo");
   }
+  else
+  {
+    loadDoc(c);
+  }
 }
 
 function passwd()
@@ -31,17 +35,11 @@ function passwd()
   if (p.length >= 6 && p.length < 9)
   {
     c.style.background = "red";
-    //t.fillText("baja",10,15);
-    // t.fillText("baja",10,15);
   }
-  //
   else if (p.length >= 9 && p.length < 12)
   {
     c.style.background = "yellow";
-    //t.fillText("",10,15);
-    //t.fillText("media",10,15);
   }
-  //
   else if (p.length >= 12)
   {
     c.style.background = "#00ff00";
