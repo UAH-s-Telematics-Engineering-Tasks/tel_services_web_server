@@ -24,11 +24,11 @@ function mostrar(count, txt)
       break;
 
     case "Inglaterra":
-      document.getElementById("city").value = txt.split("\n")[3];
+      document.getElementById("city").value = txt.split("\n")[2];
       break;
 
     case "Italia":
-      document.getElementById("city").value = txt.split("\n")[2];
+      document.getElementById("city").value = txt.split("\n")[3];
       break;
 
     default:
