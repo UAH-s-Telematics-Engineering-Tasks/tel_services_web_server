@@ -1,19 +1,11 @@
 $(document).ready(function() {
   $("#pag1").show();
-  style_me_up(1);
+  get_n_create_table(1);
   $("#bot1").css("background-color", "yellow");
   $("#bot2").css("background-color", "white");
   $("#bot3").css("background-color", "white");
   $("#bot3").css("background-color", "white");
   $("#sel1").css("background-color", "red");
-
-  $("button.no_back").click(function() {
-    $(this).parent().parent().hide();
-  });
-
-  $("button.show_hidden").click(function() {
-    $(this).parent().parent().siblings().show();
-  });
 
   $("#bot1").click(function() {
     $("#cont").children("div").hide();
@@ -26,7 +18,7 @@ $(document).ready(function() {
     $("#sel2").css("background-color", "white");
     $("#sel3").css("background-color", "white");
     $("#sel4").css("background-color", "white");
-    style_me_up(this.id.substr(3));
+    get_n_create_table(this.id.substr(3));
   });
 
   $("#bot2").click(function() {
@@ -40,7 +32,7 @@ $(document).ready(function() {
     $("#sel1").css("background-color", "white");
     $("#sel3").css("background-color", "white");
     $("#sel4").css("background-color", "white");
-    style_me_up(this.id.substr(3));
+    get_n_create_table(this.id.substr(3));
   });
 
   $("#bot3").click(function() {
@@ -54,7 +46,7 @@ $(document).ready(function() {
     $("#sel1").css("background-color", "white");
     $("#sel2").css("background-color", "white");
     $("#sel4").css("background-color", "white");
-    style_me_up(this.id.substr(3));
+    get_n_create_table(this.id.substr(3));
   });
 
   $("#bot4").click(function() {
@@ -68,7 +60,7 @@ $(document).ready(function() {
     $("#sel1").css("background-color", "white");
     $("#sel2").css("background-color", "white");
     $("#sel3").css("background-color", "white");
-    style_me_up(this.id.substr(3));
+    get_n_create_table(this.id.substr(3));
   });
 });
 
@@ -78,4 +70,15 @@ function style_me_up(n) {
   $("#tab" + n + " tr:nth-child(1)").css("background-color", "#cccccc");
   $("#tab" + n + " td:nth-child(1)").css("background-color", "#cccccc");
   $("#tab" + n + " th:nth-child(1)").css("background-color", "#cccccc");
+  add_functionality();
+}
+
+function add_functionality() {
+  $("button.no_back").click(function() {
+    $(this).parent().parent().hide();
+  });
+
+  $("button.show_hidden").click(function() {
+    $(this).parent().parent().siblings().show();
+  });
 }

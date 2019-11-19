@@ -1,0 +1,189 @@
+<table_data>
+  <tbl>
+    <entry>
+      <city>Tatooine</city>
+      <temp>25</temp>
+      <hum>48</hum>
+      <noise>150</noise>
+      <light>120</light>
+      <color>000000</color>
+    </entry>
+
+    <entry>
+      <city>Hoth</city>
+      <temp>30</temp>
+      <hum>69</hum>
+      <noise>180</noise>
+      <light>211</light>
+      <color>FF0000</color>
+    </entry>
+
+    <entry>
+      <city>Coruscant</city>
+      <temp>20</temp>
+      <hum>40</hum>
+      <noise>50</noise>
+      <light>150</light>
+      <color>00FF00</color>
+    </entry>
+
+    <entry>
+      <city>Dagobah</city>
+      <temp>18</temp>
+      <hum>42</hum>
+      <noise>211</noise>
+      <light>180</light>
+      <color>0000FF</color>
+    </entry>
+
+    <entry>
+      <city>Bespin</city>
+      <temp>35</temp>
+      <hum>41</hum>
+      <noise>159</noise>
+      <light>50</light>
+      <color>FFFFFF</color>
+    </entry>
+  </tbl>
+
+  <tbl>
+    <entry>
+      <city>Tokyo</city>
+      <temp>15</temp>
+      <hum>38</hum>
+      <noise>120</noise>
+      <light>160</light>
+      <color>F00000</color>
+    </entry>
+
+    <entry>
+      <city>Kyoto</city>
+      <temp>20</temp>
+      <hum>75</hum>
+      <noise>130</noise>
+      <light>199</light>
+      <color>0F0000</color>
+    </entry>
+
+    <entry>
+      <city>Osaka</city>
+      <temp>25</temp>
+      <hum>55</hum>
+      <noise>115</noise>
+      <light>175</light>
+      <color>00F000</color>
+    </entry>
+
+    <entry>
+      <city>Sapporo</city>
+      <temp>28</temp>
+      <hum>37</hum>
+      <noise>107</noise>
+      <light>199</light>
+      <color>000F00</color>
+    </entry>
+
+    <entry>
+      <city>Fukushima</city>
+      <temp>54</temp>
+      <hum>37</hum>
+      <noise>121</noise>
+      <light>99</light>
+      <color>0000F0</color>
+    </entry>
+  </tbl>
+
+  <tbl>
+    <entry>
+      <city>Neptuno</city>
+      <temp>22</temp>
+      <hum>44</hum>
+      <noise>151</noise>
+      <light>121</light>
+      <color>0F0F00</color>
+    </entry>
+
+    <entry>
+      <city>Plutón</city>
+      <temp>35</temp>
+      <hum>66</hum>
+      <noise>181</noise>
+      <light>171</light>
+      <color>F0F000</color>
+    </entry>
+
+    <entry>
+      <city>Marte</city>
+      <temp>15</temp>
+      <hum>35</hum>
+      <noise>55</noise>
+      <light>131</light>
+      <color>00F00F</color>
+    </entry>
+
+    <entry>
+      <city>Júpiter</city>
+      <temp>27</temp>
+      <hum>45</hum>
+      <noise>33</noise>
+      <light>919</light>
+      <color>F00F00</color>
+    </entry>
+
+    <entry>
+      <city>Saturno</city>
+      <temp>99</temp>
+      <hum>66</hum>
+      <noise>696</noise>
+      <light>969</light>
+      <color>0F00F0</color>
+    </entry>
+  </tbl>
+
+  <tbl>
+    <entry>
+      <city>Edinburgo</city>
+      <temp>33</temp>
+      <hum>22</hum>
+      <noise>128</noise>
+      <light>150</light>
+      <color>F0F0F0</color>
+    </entry>
+
+    <entry>
+      <city>Londres</city>
+      <temp>25</temp>
+      <hum>37</hum>
+      <noise>131</noise>
+      <light>207</light>
+      <color>0F0F0F</color>
+    </entry>
+
+    <entry>
+      <city>Cardiff</city>
+      <temp>15</temp>
+      <hum>44</hum>
+      <noise>55</noise>
+      <light>121</light>
+      <color>F00F0F</color>
+    </entry>
+
+    <entry>
+      <city>Oxford</city>
+      <temp>33</temp>
+      <hum>29</hum>
+      <noise>35</noise>
+      <light>130</light>
+      <color>F0F00F</color>
+    </entry>
+
+    <entry>
+      <city>Brighton</city>
+      <temp>28</temp>
+      <hum>18</hum>
+      <noise>108</noise>
+      <light>58</light>
+      <color>0F0FF0</color>
+    </entry>
+  </tbl>
+</table_data>
