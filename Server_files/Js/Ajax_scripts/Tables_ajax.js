@@ -62,26 +62,25 @@ $(document).ready(function() {
     $("#sel3").css("background-color", "white");
     get_n_create_table(this.id.substr(3));
   });
+  function style_me_up(n) {
+    alert("I'm here!");
+    $("#tab" + n + " tr:odd").css("background-color", "#00FF40");
+    $("#tab" + n + " tr:even").css("background-color", "#FA58F4");
+    $("#tab" + n + " tr:nth-child(1)").css("background-color", "#cccccc");
+    $("#tab" + n + " td:nth-child(1)").css("background-color", "#cccccc");
+    $("#tab" + n + " th:nth-child(1)").css("background-color", "#cccccc");
+    alert("About to enter!");
+    add_functionality();
+  }
+
+  function add_functionality() {
+    alert("Hey!");
+    $("button.no_back").click(function() {
+      $(this).parent().parent().hide();
+    });
+
+    $("button.show_hidden").click(function() {
+      $(this).parent().parent().siblings().show();
+    });
+  }
 });
-
-function style_me_up(n) {
-  alert("I'm here!");
-  $("#tab" + n + " tr:odd").css("background-color", "#00FF40");
-  $("#tab" + n + " tr:even").css("background-color", "#FA58F4");
-  $("#tab" + n + " tr:nth-child(1)").css("background-color", "#cccccc");
-  $("#tab" + n + " td:nth-child(1)").css("background-color", "#cccccc");
-  $("#tab" + n + " th:nth-child(1)").css("background-color", "#cccccc");
-  alert("About to enter!");
-  add_functionality();
-}
-
-function add_functionality() {
-  alert("Hey!");
-  $("button.no_back").click(function() {
-    $(this).parent().parent().hide();
-  });
-
-  $("button.show_hidden").click(function() {
-    $(this).parent().parent().siblings().show();
-  });
-}
