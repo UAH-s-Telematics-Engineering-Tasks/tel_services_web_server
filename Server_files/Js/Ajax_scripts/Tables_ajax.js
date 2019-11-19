@@ -70,6 +70,7 @@ function style_me_up(n) {
   $("#tab" + n + " tr:nth-child(1)").css("background-color", "#cccccc");
   $("#tab" + n + " td:nth-child(1)").css("background-color", "#cccccc");
   $("#tab" + n + " th:nth-child(1)").css("background-color", "#cccccc");
+  alert("About to enter!");
   add_functionality();
 }
 
