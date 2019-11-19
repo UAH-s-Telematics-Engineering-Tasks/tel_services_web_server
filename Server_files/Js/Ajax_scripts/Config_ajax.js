@@ -1,3 +1,5 @@
+var OPTION_TAG = '<option value="';
+
 function loadDoc(pais)
 {
   var xhttp = new XMLHttpRequest();
@@ -14,24 +16,26 @@ function loadDoc(pais)
 
 function mostrar(count, txt)
 {
+  var options = "";
   switch (count) {
     case "España":
-      document.getElementById("city").value = txt.split("\n")[0];
+      for (const x of txt.split("\n")[0].split(","))
+        options += OPTION_TAG + x + '">"';
       break;
 
     case "Francia":
-      document.getElementById("city").value = txt.split("\n")[1];
+      for (const x of txt.split("\n")[1].split(","))
+        options += OPTION_TAG + x + '">"';
       break;
 
     case "Inglaterra":
-      document.getElementById("city").value = txt.split("\n")[2];
+      for (const x of txt.split("\n")[2].split(","))
+        options += OPTION_TAG + x + '">"';
       break;
 
     case "Italia":
-      document.getElementById("city").value = txt.split("\n")[3];
-      break;
-
-    default:
-      document.getElementById("city").value = txt.split("\n")[4];
+      for (const x of txt.split("\n")[3].split(","))
+        options += OPTION_TAG + x + '">"';
   }
+  document.getElementById("city_list").innerHTML = options;
 }
