@@ -38,6 +38,7 @@ function loadDoc(pais)
 
 function mostrar(count, txt)
 {
+  alert("Hi from mostrar()");
   switch (count) {
     case "España":
       document.getElementById("city").value = txt.split("\n")[0];
