@@ -7,16 +7,6 @@ $(document).ready(function() {
   $("#bot3").css("background-color", "white");
   $("#sel1").css("background-color", "red");
 
- function add_functionality() {
-   $("button.no_back").click(function() {
-     $(this).parent().parent().hide();
-   });
-
-   $("button.show_hidden").click(function() {
-     $(this).parent().parent().siblings().show();
-   });
- }
-
   $("#bot1").click(function() {
     $("#cont").children("div").hide();
     $("#pag1").show();
@@ -80,4 +70,15 @@ function style_me_up(n) {
   $("#tab" + n + " tr:nth-child(1)").css("background-color", "#cccccc");
   $("#tab" + n + " td:nth-child(1)").css("background-color", "#cccccc");
   $("#tab" + n + " th:nth-child(1)").css("background-color", "#cccccc");
+}
+
+function add_functionality() {
+  alert("Hey!");
+  $("button.no_back").click(function() {
+    $(this).parent().parent().hide();
+  });
+
+  $("button.show_hidden").click(function() {
+    $(this).parent().parent().siblings().show();
+  });
 }
