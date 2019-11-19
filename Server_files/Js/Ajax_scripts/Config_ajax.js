@@ -4,35 +4,59 @@ function loadDoc(pais)
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200)
     {
-      mostrar(this.responseText);
+      mostrar(pais, this.responseText);
     }
   };
 
-  if (pais == "España")
-  {
-    xhttp.open("GET", "../españa.txt", true);
-  }
-  else if (pais == "Francia")
-  {
-    xhttp.open("GET", "../francia.txt", true);
-  }
-  else if (pais == "Italia")
-  {
-    xhttp.open("GET", "../italia.txt", true);
-  }
-  else if (pais == "Inglaterra")
-  {
-    xhttp.open("GET", "../inglaterra.txt", true);
-  }
-  else
-  {
-    xhttp.open("GET", "../vacio.txt", true);
-  }
+  // if (pais == "España")
+  // {
+  //   xhttp.open("GET", "../españa.txt", true);
+  // }
+  // else if (pais == "Francia")
+  // {
+  //   xhttp.open("GET", "../francia.txt", true);
+  // }
+  // else if (pais == "Italia")
+  // {
+  //   xhttp.open("GET", "../italia.txt", true);
+  // }
+  // else if (pais == "Inglaterra")
+  // {
+  //   xhttp.open("GET", "../inglaterra.txt", true);
+  // }
+  // else
+  // {
+  //   xhttp.open("GET", "../vacio.txt", true);
+  // }
+  //
+  // xhttp.send();
 
-  xhttp.send();
+  xhttp.open("GET", "../Ajax_files/Cities_ajax.txt", true);
+  xhhtp.send();
+
 }
 
-function mostrar(txt)
+function mostrar(count, txt)
 {
-  document.getElementById("city").value = txt;
+  switch (count) {
+    case "España":
+      document.getElementById("city").value = txt.split("\n")[0];
+      break;
+
+    case "Fracncia":
+      document.getElementById("city").value = txt.split("\n")[1];
+      break;
+
+    case "Italia":
+      document.getElementById("city").value = txt.split("\n")[2];
+      break;
+
+    case "Inglaterra":
+      document.getElementById("city").value = txt.split("\n")[3];
+      break;
+
+    default:
+      document.getElementById("city").value = txt.split("\n")[4];
+
+  }
 }
