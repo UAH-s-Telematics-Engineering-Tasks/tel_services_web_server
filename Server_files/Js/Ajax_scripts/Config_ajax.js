@@ -20,22 +20,22 @@ function mostrar(count, txt)
   switch (count) {
     case "España":
       for (const x of txt.split("\n")[0].split(","))
-        options += OPTION_TAG + x + '">"';
+        options += OPTION_TAG + x + '">';
       break;
 
     case "Francia":
       for (const x of txt.split("\n")[1].split(","))
-        options += OPTION_TAG + x + '">"';
+        options += OPTION_TAG + x + '">';
       break;
 
     case "Inglaterra":
       for (const x of txt.split("\n")[2].split(","))
-        options += OPTION_TAG + x + '">"';
+        options += OPTION_TAG + x + '">';
       break;
 
     case "Italia":
       for (const x of txt.split("\n")[3].split(","))
-        options += OPTION_TAG + x + '">"';
+        options += OPTION_TAG + x + '">';
   }
   document.getElementById("city_list").innerHTML = options;
 }
