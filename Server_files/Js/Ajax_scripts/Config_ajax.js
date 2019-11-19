@@ -1,6 +1,6 @@
 function loadDoc(pais)
 {
-  alert("Got to loadDoc()");
+  // alert("Got to loadDoc()");
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200)
@@ -32,9 +32,9 @@ function loadDoc(pais)
   //
   // xhttp.send();
   xhttp.open("GET", "../Ajax_files/Cities_ajax.txt", true);
-  alert("Hello");
-  xhhtp.send();
-  alert("Reached the end of loadDoc()");
+  // alert("Hello");
+  xhttp.send();
+  // alert("Reached the end of loadDoc()");
 
 }
 
