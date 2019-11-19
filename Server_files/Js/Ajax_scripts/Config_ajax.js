@@ -31,7 +31,7 @@ function loadDoc(pais)
   // }
   //
   // xhttp.send();
-
+  alert("Hello");
   xhttp.open("GET", "../Ajax_files/Cities_ajax.txt", true);
   xhhtp.send();
   alert("Reached the end of loadDoc()");
