@@ -32,7 +32,7 @@ function parse_data(resp, id) {
               ent.getElementsByTagName("color")[0].childNodes[0].nodeValue +
               '</td></tr>';
 
-    document.getElementById("tab" + id).innerHTML = table + '</tbody>';
+    document.getElementById("tab").innerHTML = table + '</tbody>';
 
-    style_me_up(id);
+    style_me_up();
 }

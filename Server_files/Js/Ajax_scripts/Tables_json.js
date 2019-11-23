@@ -28,7 +28,7 @@ function parse_data(resp, id) {
               ent.color +
               '</td></tr>';
 
-  document.getElementById("tab" + id).innerHTML = table + '</tbody>';
+  document.getElementById("tab").innerHTML = table + '</tbody>';
 
-  style_me_up(id);
+  style_me_up();
 }
