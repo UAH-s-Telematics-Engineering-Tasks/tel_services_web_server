@@ -1,6 +1,6 @@
 $(document).ready(function() {
-  get_n_create_table(1);
   $("#pag1").show();
+  get_n_create_table(1);
   $("#bot1").css("background-color", "yellow");
   $("#bot2").css("background-color", "white");
   $("#bot3").css("background-color", "white");
@@ -8,6 +8,7 @@ $(document).ready(function() {
   $("#sel1").css("background-color", "red");
 
   $("#bot1").click(function() {
+    $("#pag1").show();
     $("#bot1").css("background-color", "yellow");
     $("#bot2").css("background-color", "white");
     $("#bot3").css("background-color", "white");
@@ -20,8 +21,7 @@ $(document).ready(function() {
   });
 
   $("#bot2").click(function() {
-    $("#cont").children("div").hide();
-    $("#pag2").show();
+    $("#pag1").show();
     $("#bot2").css("background-color", "yellow");
     $("#bot1").css("background-color", "white");
     $("#bot3").css("background-color", "white");
@@ -34,6 +34,7 @@ $(document).ready(function() {
   });
 
   $("#bot3").click(function() {
+    $("#pag1").show();
     $("#bot3").css("background-color", "yellow");
     $("#bot1").css("background-color", "white");
     $("#bot2").css("background-color", "white");
@@ -46,6 +47,7 @@ $(document).ready(function() {
   });
 
   $("#bot4").click(function() {
+    $("#pag1").show();
     $("#bot4").css("background-color", "yellow");
     $("#bot1").css("background-color", "white");
     $("#bot2").css("background-color", "white");
@@ -58,7 +60,7 @@ $(document).ready(function() {
   });
 });
 
-function style_me_up() {
+function style_me_up(n) {
   $("#tab tr:odd").css("background-color", "#00FF40");
   $("#tab tr:even").css("background-color", "#FA58F4");
   $("#tab tr:nth-child(1)").css("background-color", "#cccccc");
