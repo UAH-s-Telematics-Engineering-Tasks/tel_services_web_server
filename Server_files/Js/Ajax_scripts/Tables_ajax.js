@@ -55,7 +55,7 @@ $(document).ready(function() {
   });
 });
 
-function style_me_up(n) {
+function style_me_up() {
   $("#tab tr:odd").css("background-color", "#00FF40");
   $("#tab tr:even").css("background-color", "#FA58F4");
   $("#tab tr:nth-child(1)").css("background-color", "#cccccc");
