@@ -11,6 +11,10 @@ php --version
 ehco ""
 php -m | grep mysql*
 
+# Fix the count() function in PhpMyAdmin. Delete the third parenthesis in line 614
+# Just copy the corrected file
+sudo cp sql.lib.php.corrected /usr/share/phpmyadmin/libraries/sql.lib.php
+
 # Reload Apache 2 for the changes to take effect
 sudo service apache2 restart
 
