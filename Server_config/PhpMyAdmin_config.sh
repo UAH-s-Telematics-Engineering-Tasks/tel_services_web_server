@@ -20,20 +20,3 @@ sudo service apache2 restart
 
 # Check that the config has been enabled
 ls /etc/apache2/conf-enabled | grep phpmyadmin.conf
-
-# Query the MySQL DB to find the current users
-echo "Run SELECT user,authentication_string,plugin,host FROM mysql.user; within MySQL"
-sudo mysql
-
-# We can also use the root account but we need to change its authentication plugin
-sudo mysql
-echo "Run ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password'; within MySQL"
-echo "Run FLUSH PRIVILEGES; from within MySQL to update them"
-ehco "Run SELECT user,authentication_string,plugin,host FROM mysql.user; to check the changes took effect"
-
-# Optionally create a new user for managing the DBs
-sudo mysql
-echo "Run CREATE USER 'user'@'localhost' IDENTIFIED BY 'password'; within MySQL"
-
-# Grant privileges to the new user to be able to add/change/remove anything from anywhere
-echo "Run GRANT ALL PRIVILEGES ON *.* TO 'sammy'@'localhost' WITH GRANT OPTION; within MySQL"
