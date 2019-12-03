@@ -20,3 +20,6 @@ sudo service apache2 restart
 
 # Check that the config has been enabled
 ls /etc/apache2/conf-enabled | grep phpmyadmin.conf
+
+# Create the new user
+mysql -u root -p < DBs_config.sql
