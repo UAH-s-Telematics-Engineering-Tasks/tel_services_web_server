@@ -4,5 +4,5 @@ This repository contains the configuration files of the server as well as all th
 And remember:
 
 <p align="center">
-  <img src="./Memes/It_works.jpg">
+  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fres.cloudinary.com%2Fteepublic%2Fimage%2Fprivate%2Fs--R2hlovCL--%2Ft_Preview%2Fb_rgb%3Affffff%2Cc_lpad%2Cf_jpg%2Ch_630%2Cq_90%2Cw_1200%2Fv1464028809%2Fproduction%2Fdesigns%2F521845_1.jpg&f=1&nofb=1">
 </p>
